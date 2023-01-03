@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "import-helpers"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react$/", "/^react-native$/"],
+          "module",
+          ["/(contexts)/", "/(hooks)/"],
+          ["/components/", "/(components)/"],
+          ["/services/", "/(services)/"],
+          ["/lib/", "/(lib)/"],
+          ["/utils/", "/(utils)/"],
+          ["/config/", "/(config)/"],
+          ["/types/", "/(types)/"],
+          ["/styles/", "/(styles)/"],
+          ["/data/", "/(data)/"],
+          ["/assets/", "/(assets)/"]
+        ],
+        "alphabetize": { "order": "desc", "ignoreCase": true }
+      }
+    ]
+  }
+}
