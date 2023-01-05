@@ -6,18 +6,14 @@
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "next/core-web-vitals"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "import-helpers"],
+  "plugins": ["@typescript-eslint", "import-helpers"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "import-helpers/order-imports": [
@@ -28,6 +24,7 @@
           ["/^react$/", "/^react-native$/"],
           "module",
           ["/(contexts)/", "/(hooks)/"],
+          ["/layouts/", "/(layouts)/"],
           ["/components/", "/(components)/"],
           ["/services/", "/(services)/"],
           ["/lib/", "/(lib)/"],

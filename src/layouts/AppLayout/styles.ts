@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AppLayoutContainer = styled.div`
-  background: ${({ theme }) => theme.colors.neutral[800]};
+  background: ${({ theme }) => theme.colors.neutral[900]};
 
   .content {
     width: 100%;
