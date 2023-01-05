@@ -1,12 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 100vw;
-  min-width: 100vw;
   width: 100%;
+  height: 100%;
   max-height: 100vh;
   min-height: 100vh;
-  height: 100%;
+
+  background: ${({ theme }) => theme.colors.neutral[800]};
+
+  canvas {
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+  }
 `
 
 export const Content = styled.div`
@@ -15,12 +25,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
 
-  max-height: calc(100vh - 150px);
-  min-height: calc(100vh - 150px);
+  max-height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
 
   .message-wrapper {
     width: 100%;
     height: 100%;
+
+    z-index: 4;
 
     display: flex;
     align-items: center;
@@ -36,6 +48,12 @@ export const Content = styled.div`
       margin: 0 24px;
       border-right: 2px solid #353535;
     }
+
+    > button {
+      margin-left: 2rem;
+
+      z-index: 4;
+    }
   }
 
   .gif-wrapper {
@@ -44,8 +62,9 @@ export const Content = styled.div`
     height: 100%;
     max-height: 270px;
 
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-top: 1rem;
+
+    z-index: 4;
 
     img {
       border-radius: 10px;

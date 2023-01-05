@@ -13,10 +13,26 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+
+    background: #000;
   }
 
   html {
     font-size: 100%;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${({ theme }) => theme.colors.neutral[800]};
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.colors.neutral[500]}; 
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${({ theme }) => theme.colors.neutral[400]}; 
+    }
 
     @media (max-width: 768px) {
       font-size: 97.5%;
@@ -26,13 +42,13 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
   body,
   input,
   button {
-    font-family: 'Inter', sans-serif;
-    color: ${({ theme }) => theme.colors.black};
+    font-family: 'Ubuntu', sans-serif;
+    color: ${({ theme }) => theme.colors.neutral[200]};
 
     font-size: 1rem;
 
     &:focus {
-      outline: 1px solid ${({ theme }) => theme.colors.black};
+      outline: 1px solid ${({ theme }) => theme.colors.sky[500]};
     }
   }
 
