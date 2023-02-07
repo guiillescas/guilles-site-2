@@ -9,12 +9,9 @@ export const HomeContainer = styled.div`
 
   canvas {
     position: absolute;
-    z-index: 1;
 
     top: 0;
     left: 0;
-
-    z-index: 1;
   }
 
   .canvas-background {
@@ -24,7 +21,7 @@ export const HomeContainer = styled.div`
     bottom: 0;
     left: 0;
 
-    z-index: 2;
+    z-index: 1;
 
     width: 100%;
     max-width: 100vw;

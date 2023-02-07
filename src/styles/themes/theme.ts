@@ -71,7 +71,12 @@ export const theme = {
       700: '#0369a1',
       800: '#075985',
       900: '#0c4a6e'
-    }
+    },
+
+    background: '#111827',
+
+    glassedEffect: 'rgba(255, 255, 255, 0.25)',
+    glassedShadowEffect: 'rgba(149, 157, 165, 0.2)'
   },
 
   font: {

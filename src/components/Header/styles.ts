@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
-  position: fixed;
-  top: 0;
+  position: relative;
 
   display: flex;
   align-items: center;
@@ -10,10 +9,13 @@ export const HeaderContainer = styled.div`
 
   width: 100%;
   max-width: 1200px;
+  overflow-y: hidden;
+
+  margin: 0 auto;
 
   padding: 1rem 0;
 
-  z-index: 10;
+  z-index: 3 !important;
 
   img {
     width: 40px;
