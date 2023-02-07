@@ -9,7 +9,7 @@ import SEO from 'components/SEO'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from 'styles/pages/Home'
+import * as Styles from 'styles/pages/home'
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
