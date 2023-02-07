@@ -16,8 +16,9 @@ export function Header(): ReactElement {
       />
 
       <nav>
-        <Link href="#about">About</Link>
-        <Link href="#experience">Experience</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/#about">About</Link>
+        <Link href="/#experience">Experience</Link>
       </nav>
     </Styles.HeaderContainer>
   )

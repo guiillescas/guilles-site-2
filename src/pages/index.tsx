@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 import Image from 'next/image'
 import { format } from 'date-fns'
@@ -9,12 +9,12 @@ import SEO from 'components/SEO'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from 'styles/Pages/Home'
+import * as Styles from 'styles/pages/Home'
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     renderCanvasStars(canvasRef.current)
   }, [])
 

@@ -1,4 +1,4 @@
-import { ReactElement, useLayoutEffect, useRef } from 'react'
+import { ReactElement, useEffect, useRef } from 'react'
 
 import { useRouter } from 'next/router'
 import Image from 'next/image'
@@ -10,7 +10,7 @@ import { Button } from 'components/Button'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from 'styles/Pages/NotFound'
+import * as Styles from 'styles/pages/NotFound'
 
 export default function NotFound(): ReactElement {
   const router = useRouter()
@@ -21,7 +21,7 @@ export default function NotFound(): ReactElement {
     router.push('/')
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     renderCanvasStars(canvasRef.current)
   }, [])
 
