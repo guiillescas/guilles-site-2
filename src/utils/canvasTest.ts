@@ -85,7 +85,6 @@ export function renderCanvasStars(canvasRef: HTMLCanvasElement | null) {
       const cy = canvasHeight / 2
 
       const count = stars.length
-
       for (let i = 0; i < count; i++) {
         const star = stars[i]
 
