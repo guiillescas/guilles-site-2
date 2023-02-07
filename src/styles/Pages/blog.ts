@@ -15,6 +15,8 @@ export const BlogContainer = styled.main<BlogContainerProps>`
 
   z-index: 1;
 
+  padding: 0 1rem;
+
   > div.background {
     position: absolute;
 
