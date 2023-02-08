@@ -1,5 +1,7 @@
 import { ReactElement } from 'react'
 
+import { motion } from 'framer-motion'
+
 import { Header } from 'components/Header'
 
 import { AppLayoutProps } from './types'
@@ -12,7 +14,15 @@ export function AppLayout(props: AppLayoutProps): ReactElement {
       <div className="content">
         <Header />
 
-        {props.children}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.3
+          }}
+        >
+          {props.children}
+        </motion.div>
       </div>
     </Styles.AppLayoutContainer>
   )

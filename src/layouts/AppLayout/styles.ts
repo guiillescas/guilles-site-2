@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const AppLayoutContainer = styled.div`
-  background: ${({ theme }) => theme.colors.neutral[900]};
+  position: relative;
+
+  overflow-x: hidden;
 
   .content {
     width: 100%;
@@ -10,6 +12,6 @@ export const AppLayoutContainer = styled.div`
     padding: 0 1rem;
     margin: 0 auto;
 
-    z-index: 2;
+    z-index: 20;
   }
 `
