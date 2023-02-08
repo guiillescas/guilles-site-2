@@ -7,13 +7,7 @@ import Image3 from '../../../public/assets/blue-vector-2.png'
 import Image1 from '../../../public/assets/blue-square-vector-1.png'
 
 export const BlogContainer = styled.main<BlogContainerProps>`
-  position: relative;
-
-  overflow-x: hidden;
-
   height: 100%;
-
-  z-index: 1;
 
   padding: 0 1rem;
 
@@ -66,7 +60,6 @@ export const BlogContainer = styled.main<BlogContainerProps>`
     }
   }
 
-  .header-wrapper,
   > section {
     width: 100%;
     max-width: 1200px;
@@ -88,7 +81,10 @@ export const BlogContainer = styled.main<BlogContainerProps>`
     > div {
       text-align: center;
 
+      z-index: 8;
+
       > h2 {
+        z-index: 9;
         line-height: 130%;
         font-size: 4rem;
 
@@ -111,6 +107,8 @@ export const BlogContainer = styled.main<BlogContainerProps>`
 
       .form {
         position: relative;
+
+        z-index: 10;
 
         display: flex;
         align-items: center;

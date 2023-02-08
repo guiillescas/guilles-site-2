@@ -5,22 +5,17 @@ import { useForm } from 'react-hook-form'
 import { GetStaticProps } from 'next'
 import { BlogProps, IFormProps } from 'interfaces/pages/blog'
 import { GET_ALL } from 'graphql/post'
-import { Roboto } from '@next/font/google'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
+import { AppLayout } from 'layouts/AppLayout'
+
 import { PostCard } from 'components/PostCard'
-import { Header } from 'components/Header'
 import { Footer } from 'components/Footer'
 import { ButtonSizesEnum, ButtonVariantsEnum } from 'components/Button/types'
 import { Button } from 'components/Button'
 
 import * as Styles from 'styles/pages/blog'
-import { baloo2 } from 'styles/fonts'
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '500']
-})
+import { secondary, primary } from 'styles/fonts'
 
 function Blog(props: BlogProps) {
   const [isSearchActive, setIsSearchActive] = useState(false)
@@ -55,118 +50,118 @@ function Blog(props: BlogProps) {
       : []
 
   return (
-    <Styles.BlogContainer
-      formError={!!errors.search?.message}
-      activeSearch={suggestedPosts.length > 0}
-    >
-      <Header />
+    <AppLayout>
+      <Styles.BlogContainer
+        formError={!!errors.search?.message}
+        activeSearch={suggestedPosts.length > 0}
+      >
+        <div className="background one" />
+        <div className="background two" />
+        <div className="background three" />
+        <div className="background four" />
 
-      <div className="background one" />
-      <div className="background two" />
-      <div className="background three" />
-      <div className="background four" />
-
-      <section id="presentation">
-        <div>
-          <h2 className={baloo2.className}>Learn things quickly</h2>
-          <p>Find short posts with compressed and good content.</p>
-        </div>
-
-        <div className="form-wrapper">
-          <div className="form">
-            <input
-              autoComplete="off"
-              type="text"
-              placeholder="Search for something..."
-              list="suggestions"
-              {...register('search')}
-            />
-            <datalist id="suggestions" role="listbox">
-              {suggestedPosts.map(suggestedPost => (
-                <option key={suggestedPost} value={suggestedPost}>
-                  {suggestedPost}
-                </option>
-              ))}
-            </datalist>
-
-            <Button
-              variant={ButtonVariantsEnum.Secondary}
-              size={ButtonSizesEnum.Small}
-              type="button"
-            >
-              Search
-            </Button>
+        <section id="presentation">
+          <div>
+            <h2 className={secondary.className}>Learn things quickly</h2>
+            <p>Find short posts with compressed and good content.</p>
           </div>
 
-          <span>{errors.search && errors.search.message}</span>
-        </div>
-      </section>
+          <div className="form-wrapper">
+            <div className="form">
+              <input
+                autoComplete="off"
+                type="text"
+                placeholder="Search for something..."
+                list="suggestions"
+                {...register('search')}
+              />
+              <datalist id="suggestions" role="listbox">
+                {suggestedPosts.map(suggestedPost => (
+                  <option key={suggestedPost} value={suggestedPost}>
+                    {suggestedPost}
+                  </option>
+                ))}
+              </datalist>
 
-      {isSearchActive ? (
-        <section id="search">
-          <h2 className={baloo2.className}>
-            Posts for:{' '}
-            <span className={roboto.className}>{watch('search')}</span>
-          </h2>
+              <Button
+                variant={ButtonVariantsEnum.Secondary}
+                size={ButtonSizesEnum.Small}
+                type="button"
+              >
+                Search
+              </Button>
+            </div>
 
-          <div className="posts-wrapper">
-            {props.posts
-              .filter(post =>
-                post.attributes.title.toLowerCase().includes(watch('search'))
-              )
-              .map(post => {
-                return (
-                  <PostCard
-                    key={post.attributes.urlSlug}
-                    imageSrc={post.attributes.cover.data.attributes.url}
-                    description={post.attributes.description}
-                    title={post.attributes.title}
-                    postedAt={new Date(post.attributes.createdAt)}
-                    urlSlug={post.attributes.urlSlug}
-                  />
+            <span>{errors.search && errors.search.message}</span>
+          </div>
+        </section>
+
+        {isSearchActive ? (
+          <section id="search">
+            <h2 className={secondary.className}>
+              Posts for:{' '}
+              <span className={primary.className}>{watch('search')}</span>
+            </h2>
+
+            <div className="posts-wrapper">
+              {props.posts
+                .filter(post =>
+                  post.attributes.title.toLowerCase().includes(watch('search'))
                 )
+                .map(post => {
+                  return (
+                    <PostCard
+                      key={post.attributes.urlSlug}
+                      imageSrc={post.attributes.cover.data.attributes.url}
+                      description={post.attributes.description}
+                      title={post.attributes.title}
+                      postedAt={new Date(post.attributes.createdAt)}
+                      urlSlug={post.attributes.urlSlug}
+                    />
+                  )
+                })}
+            </div>
+          </section>
+        ) : (
+          <section id="posts">
+            <h2 className={secondary.className}>Featured 🔥</h2>
+
+            <div className="featured-post">
+              <PostCard
+                imageSrc={featuredPost.attributes.cover.data.attributes.url}
+                description={featuredPost.attributes.description}
+                title={featuredPost.attributes.title}
+                postedAt={new Date(featuredPost.attributes.createdAt)}
+                urlSlug={featuredPost.attributes.urlSlug}
+                featured
+              />
+            </div>
+
+            <h2 className={secondary.className}>Posts recentes</h2>
+
+            <div className="posts-wrapper">
+              {props.posts.map((post, index) => {
+                if (index > 0) {
+                  return (
+                    <PostCard
+                      key={post.attributes.urlSlug}
+                      imageSrc={post.attributes.cover.data.attributes.url}
+                      description={post.attributes.description}
+                      title={post.attributes.title}
+                      postedAt={new Date(post.attributes.createdAt)}
+                      urlSlug={post.attributes.urlSlug}
+                      featured={index === 0}
+                    />
+                  )
+                }
               })}
-          </div>
-        </section>
-      ) : (
-        <section id="posts">
-          <h2 className={baloo2.className}>Featured 🔥</h2>
+            </div>
+          </section>
+        )}
 
-          <div className="featured-post">
-            <PostCard
-              imageSrc={featuredPost.attributes.cover.data.attributes.url}
-              description={featuredPost.attributes.description}
-              title={featuredPost.attributes.title}
-              postedAt={new Date(featuredPost.attributes.createdAt)}
-              urlSlug={featuredPost.attributes.urlSlug}
-              featured
-            />
-          </div>
-
-          <h2 className={baloo2.className}>Posts recentes</h2>
-
-          <div className="posts-wrapper">
-            {props.posts.map((post, index) => {
-              if (index > 0) {
-                return (
-                  <PostCard
-                    key={post.attributes.urlSlug}
-                    imageSrc={post.attributes.cover.data.attributes.url}
-                    description={post.attributes.description}
-                    title={post.attributes.title}
-                    postedAt={new Date(post.attributes.createdAt)}
-                    urlSlug={post.attributes.urlSlug}
-                    featured={index === 0}
-                  />
-                )
-              }
-            })}
-          </div>
-        </section>
-      )}
-
-      <Footer />
-    </Styles.BlogContainer>
+        <Footer />
+      </Styles.BlogContainer>
+    </AppLayout>
   )
 }
 

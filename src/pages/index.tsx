@@ -10,6 +10,7 @@ import SEO from 'components/SEO'
 import { renderCanvasStars } from 'utils/canvas'
 
 import * as Styles from 'styles/pages/home'
+import { primary } from 'styles/fonts'
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -27,46 +28,23 @@ export default function Home() {
         <div className="canvas-background" />
 
         <section id="introduction">
-          <h1>
-            Hey, I'm <span>Guilherme Illescas</span> 👋
-          </h1>
-          <h1>I build stuff for the web.</h1>
-          <p>
-            I'm a Senior front-end developer, able to build exceptional web apps
-            with high performance and excelent user experience.
-          </p>
+          <div className="content">
+            <h1 className={primary.className}>
+              Hey, I'm <span>Guilherme Illescas</span> 👋
+            </h1>
+            <h1 className={primary.className}>I build stuff for the web.</h1>
+            <p>
+              I'm a Senior front-end developer, able to build exceptional web
+              apps with high performance and excelent user experience.
+            </p>
+          </div>
         </section>
 
-        <section id="about">
-          <div>
-            <h1>About me</h1>
-
-            <p>
-              As a front-end developer, I have already developed multiple
-              applications that impacted more than 1 million customers arround
-              the world. Always focused on offering an excellent experience and
-              high performance for the customer
-            </p>
-
-            <p>
-              I'm passionate to make this world better with things that I do and
-              with who I am. I love help people to increase themselves and boots
-              them to get results.
-            </p>
-          </div>
-
-          <div>
-            <div className="ball one" />
-            <div className="ball two" />
-            <div className="ball three" />
-
-            <Image
-              src="/assets/me.jpeg"
-              alt="Imagem de Guilherme Illescas"
-              width={500}
-              height={470}
-            />
-          </div>
+        <section id="projects">
+          <h1>My projects</h1>
+          <p>
+            Here you can see and test in hands, projects that I worked directly
+          </p>
         </section>
 
         <section id="jobs">
@@ -105,6 +83,38 @@ export default function Home() {
             </nav>
 
             <div className="job-content"></div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div>
+            <h1>About me</h1>
+
+            <p>
+              As a front-end developer, I have already developed multiple
+              applications that impacted more than 1 million customers arround
+              the world. Always focused on offering an excellent experience and
+              high performance for the customer
+            </p>
+
+            <p>
+              I'm passionate to make this world better with things that I do and
+              with who I am. I love help people to increase themselves and boots
+              them to get results.
+            </p>
+          </div>
+
+          <div>
+            <div className="ball one" />
+            <div className="ball two" />
+            <div className="ball three" />
+
+            <Image
+              src="/assets/me.jpeg"
+              alt="Imagem de Guilherme Illescas"
+              width={500}
+              height={470}
+            />
           </div>
         </section>
       </Styles.HomeContainer>

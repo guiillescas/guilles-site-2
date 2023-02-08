@@ -17,7 +17,6 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
   
   body {
     background: ${({ theme }) => theme.colors.background};
-
   }
 
   html {
@@ -45,7 +44,6 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
   body,
   input,
   button {
-    font-family: 'Ubuntu', sans-serif;
     color: ${({ theme }) => theme.colors.neutral[200]};
 
     font-size: 1rem;

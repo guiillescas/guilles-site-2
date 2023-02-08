@@ -1,21 +1,41 @@
+import { useEffect, useState } from 'react'
+
 import Modal from 'react-modal'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
-import { Roboto } from '@next/font/google'
+import { AnimateSharedLayout } from 'framer-motion'
 
 import { ThemeProvider } from 'styled-components'
 
 import { theme } from 'styles/themes/theme'
+import * as Styles from 'styles/pages/app'
 import { GlobalStyles } from 'styles/global'
+import { primary } from 'styles/fonts'
+
+import Loading from './loading'
 
 Modal.setAppElement('#__next')
 
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '500']
-})
-
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    const handleStart = (url: string) => {
+      url !== router.pathname ? setIsLoading(true) : setIsLoading(false)
+    }
+
+    const handleComplete = () => {
+      setIsLoading(false)
+    }
+
+    router.events.on('routeChangeStart', handleStart)
+    router.events.on('routeChangeComplete', handleComplete)
+    router.events.on('routeChangeError', handleComplete)
+  }, [router])
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -25,7 +45,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
 
-      <Component className={roboto.className} {...pageProps} />
+      <AnimateSharedLayout>
+        <Styles.AppContainer className={primary.className}>
+          {isLoading ? <Loading /> : <Component {...pageProps} />}
+        </Styles.AppContainer>
+      </AnimateSharedLayout>
     </ThemeProvider>
   )
 }

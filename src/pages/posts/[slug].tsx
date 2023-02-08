@@ -12,12 +12,13 @@ import { PostPageProps } from 'interfaces/pages/post'
 import { GET_ALL_SLUGS, GET_ONE } from 'graphql/post'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
+import { AppLayout } from 'layouts/AppLayout'
+
 import { WriterPostTitle } from 'components/WriterPostTitle'
-import { Header } from 'components/Header'
 import { Footer } from 'components/Footer'
 
 import * as Styles from 'styles/pages/post'
-import { baloo2 } from 'styles/fonts'
+import { secondary } from 'styles/fonts'
 
 const client = new ApolloClient({
   uri: process.env.NEXT_PUBLIC_STRAPI_URL,
@@ -26,33 +27,33 @@ const client = new ApolloClient({
 
 function Post({ post }: PostPageProps): ReactElement {
   return (
-    <Styles.PostContainer>
-      <Head>
-        <link href="themes/prism-vsc-dark-plus.css" rel="stylesheet" />
-      </Head>
+    <AppLayout>
+      <Styles.PostContainer>
+        <Head>
+          <link href="themes/prism-vsc-dark-plus.css" rel="stylesheet" />
+        </Head>
 
-      <Header />
+        <section>
+          <WriterPostTitle
+            author="Guilherme Illescas"
+            imageSrc="/assets/me.jpeg"
+            publishedAt={new Date(post.createdAt)}
+          />
 
-      <section>
-        <WriterPostTitle
-          author="Guilherme Illescas"
-          imageSrc="/assets/me.jpeg"
-          publishedAt={new Date(post.createdAt)}
-        />
+          <h1 className={`${secondary.className} post-title`}>{post.title}</h1>
 
-        <h1 className={`${baloo2.className} post-title`}>{post.title}</h1>
+          <div className="cover">
+            <Image src={`http://localhost:1337${post.cover}`} alt="" fill />
+          </div>
 
-        <div className="cover">
-          <Image src={`http://localhost:1337${post.cover}`} alt="" fill />
-        </div>
+          <MDXRemote {...post.content} />
+        </section>
 
-        <MDXRemote {...post.content} />
-      </section>
+        <Footer />
 
-      <Footer />
-
-      <Script src="prism.js" />
-    </Styles.PostContainer>
+        <Script src="prism.js" />
+      </Styles.PostContainer>
+    </AppLayout>
   )
 }
 

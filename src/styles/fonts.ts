@@ -1,6 +1,13 @@
-import { Baloo_2 } from '@next/font/google'
+import { Baloo_2, Ubuntu } from '@next/font/google'
 
-export const baloo2 = Baloo_2({
+export const primary = Ubuntu({
   subsets: ['latin'],
-  weight: ['700', '800']
+  weight: ['400', '500'],
+  display: 'swap'
+})
+
+export const secondary = Baloo_2({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  display: 'swap'
 })

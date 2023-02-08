@@ -28,7 +28,7 @@ export const HomeContainer = styled.div`
     height: 100vh;
 
     background: ${({ theme }) =>
-      `linear-gradient(transparent 45%, ${theme.colors.neutral[900]} 99%)`};
+      `linear-gradient(transparent 40%, ${theme.colors.background} 99%)`};
   }
 
   section {
@@ -48,84 +48,25 @@ export const HomeContainer = styled.div`
 
     padding-bottom: 4rem;
 
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      color: ${({ theme }) => theme.colors.neutral[200]};
+    .content {
+      margin-bottom: 15%;
 
-      &:nth-child(2) {
-        color: ${({ theme }) => theme.colors.neutral[400]};
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: ${({ theme }) => theme.colors.neutral[200]};
+
+        &:nth-child(2) {
+          color: ${({ theme }) => theme.colors.neutral[400]};
+        }
       }
-    }
 
-    p {
-      line-height: 1.25rem;
-
-      margin-top: 1.5rem;
-
-      max-width: 550px;
-    }
-  }
-
-  #about {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    > div:nth-child(1) {
       p {
-        max-width: 768px;
-        margin: 0.75rem 0;
+        line-height: 1.25rem;
 
-        line-height: 1.5rem;
-      }
-    }
+        margin-top: 1.5rem;
 
-    > div:nth-child(2) {
-      position: relative;
-
-      .ball {
-        position: absolute;
-
-        &.one {
-          width: 50px;
-          height: 50px;
-
-          border-radius: 16px;
-
-          background: ${({ theme }) => theme.colors.sky[500]};
-        }
-        &.two {
-          width: 32px;
-          height: 32px;
-
-          border-radius: 12px;
-
-          top: -4px;
-          left: -4px;
-
-          background: ${({ theme }) => theme.colors.sky[200]};
-        }
-        &.three {
-          width: 58px;
-          height: 58px;
-
-          border-radius: 18px;
-
-          bottom: -2px;
-          right: -8px;
-
-          background: ${({ theme }) => theme.colors.sky[600]};
-        }
-      }
-
-      img {
-        width: 180px;
-        height: 180px;
-
-        border-radius: 50%;
-
-        object-fit: cover;
+        max-width: 550px;
       }
     }
   }
@@ -231,6 +172,69 @@ export const HomeContainer = styled.div`
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+      }
+    }
+  }
+
+  #about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    > div:nth-child(1) {
+      p {
+        max-width: 768px;
+        margin: 0.75rem 0;
+
+        line-height: 1.5rem;
+      }
+    }
+
+    > div:nth-child(2) {
+      position: relative;
+
+      .ball {
+        position: absolute;
+
+        &.one {
+          width: 50px;
+          height: 50px;
+
+          border-radius: 16px;
+
+          background: ${({ theme }) => theme.colors.sky[500]};
+        }
+        &.two {
+          width: 32px;
+          height: 32px;
+
+          border-radius: 12px;
+
+          top: -4px;
+          left: -4px;
+
+          background: ${({ theme }) => theme.colors.sky[200]};
+        }
+        &.three {
+          width: 58px;
+          height: 58px;
+
+          border-radius: 18px;
+
+          bottom: -2px;
+          right: -8px;
+
+          background: ${({ theme }) => theme.colors.sky[600]};
+        }
+      }
+
+      img {
+        width: 180px;
+        height: 180px;
+
+        border-radius: 50%;
+
+        object-fit: cover;
       }
     }
   }

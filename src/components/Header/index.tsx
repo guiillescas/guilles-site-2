@@ -9,7 +9,7 @@ import * as Styles from './styles'
 export function Header(): ReactElement {
   return (
     <Styles.HeaderContainer>
-      <Logo />
+      <Logo href="/" />
 
       <nav>
         <Link href="/blog">Blog</Link>
