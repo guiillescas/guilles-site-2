@@ -1,6 +1,8 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import Image from 'next/image'
+import { JobProps } from 'interfaces/pages/home'
+import { motion } from 'framer-motion'
 import { format } from 'date-fns'
 
 import { AppLayout } from 'layouts/AppLayout'
@@ -12,12 +14,37 @@ import { renderCanvasStars } from 'utils/canvas'
 import * as Styles from 'styles/pages/home'
 import { primary } from 'styles/fonts'
 
+import jobsFromStorage from 'data/jobs.json'
+
 export default function Home() {
+  const jobs: JobProps[] = jobsFromStorage
+
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const [selectedJob, setSelectedJob] = useState<JobProps>(jobs[0])
+
+  function handleSetSelectedJob(job: JobProps) {
+    setSelectedJob(job)
+  }
 
   useEffect(() => {
     renderCanvasStars(canvasRef.current)
   }, [])
+
+  const variants = {
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: 'easeOut',
+        duration: 0.3
+      }
+    },
+    hide: {
+      y: -20,
+      opacity: 0
+    }
+  }
 
   return (
     <AppLayout>
@@ -56,33 +83,43 @@ export default function Home() {
 
           <div>
             <nav>
-              <button type="button">
-                Escola Conquer
-                <span>
-                  <time>{format(new Date('09-01-2021'), 'MMM yyyy')}</time> -
-                  Present
-                </span>
-              </button>
-              <button type="button">
-                Amank
-                <span>
-                  <time>{format(new Date('08-01-2022'), 'MMM yyyy')}</time> -
-                  Present
-                </span>
-              </button>
-              <button type="button">
-                DoBank
-                <span>
-                  <time>{format(new Date('06-01-2022'), 'MMM yyyy')}</time> -{' '}
-                  <time>{format(new Date('09-01-2022'), 'MMM yyyy')}</time>
-                </span>
-              </button>
-              <button type="button">Chamer</button>
-              <button type="button">WebCorp</button>
-              <button type="button">WebTrip</button>
+              {jobs.map(job => (
+                <button
+                  type="button"
+                  key={job.company}
+                  onClick={() => handleSetSelectedJob(job)}
+                  disabled={selectedJob === job}
+                >
+                  {job.company}
+                  <span>
+                    <time>{format(new Date(job.startedAt), 'MMM yyyy')}</time> -{' '}
+                    {job.endedAt ? (
+                      <time>{format(new Date(job.endedAt), 'MMM yyyy')}</time>
+                    ) : (
+                      'Present'
+                    )}
+                  </span>
+                </button>
+              ))}
             </nav>
 
-            <div className="job-content"></div>
+            <div className="job-content">
+              <motion.div
+                key={selectedJob.company}
+                variants={variants}
+                animate="show"
+                initial="hide"
+              >
+                <h3>{selectedJob.company}</h3>
+                {selectedJob.description && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: selectedJob.description
+                    }}
+                  />
+                )}
+              </motion.div>
+            </div>
           </div>
         </section>
 
