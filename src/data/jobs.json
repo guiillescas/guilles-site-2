@@ -1,0 +1,83 @@
+[
+  {
+    "company": "Escola Conquer",
+    "companyLogoUrl": "/companies-logos/conquer.jpeg",
+    "employmentType": "Full-time",
+    "startedAt": "09-01-2021",
+    "positions": [
+      {
+        "title": "Senior Front-end Developer",
+        "startedAt": "10-01-2022",
+        "description": "<ul><li>Development and training of technical skills and soft skills in team members</li><li>Content creator for programming courses</li><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
+      },
+      {
+        "title": "Mid Front-end Developer II",
+        "startedAt": "04-01-2022",
+        "endedAt": "10-01-2022",
+        "description": "<ul><li>Development and training of technical skills and soft skills in team members</li><li>Content creator for programming courses</li><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
+      },
+      {
+        "title": "Mid Front-end Developer I",
+        "startedAt": "09-01-2021",
+        "endedAt": "03-01-2022",
+        "description": "<ul><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
+      }
+    ]
+  },
+  {
+    "company": "Amank",
+    "companyLogoUrl": "/companies-logos/amank.jpeg",
+    "employmentType": "Self-employed",
+    "title": "Co-Founder and Senior Front-end developer",
+    "description": "<p>As company partner and front-end developer, my objectives are giving the best of usability, performance and code. Make companies life easier is our goal, and growing with quality is out focus.</p>",
+    "startedAt": "08-01-2022"
+  },
+  {
+    "company": "Dobank",
+    "companyLogoUrl": "/companies-logos/dobank.jpeg",
+    "employmentType": "Freelance",
+    "title": "Mobile Developer",
+    "description": "<p>I acted as the main developer of the DoBank app during the time I was present at the company. It's made in React Native and we use the latest tech options to ensure the best security, experience and usability for the user. We consume the API using GraphQL and a few more things. The main points of this activity are:</p><ul><li>Development of features in the app</li><li>Screen development</li><li>API consumption with GraphQL</li></ul>",
+    "startedAt": "06-01-2021",
+    "endedAt": "09-01-2022"
+  },
+  {
+    "company": "Chamer",
+    "companyLogoUrl": "/companies-logos/chamer.jpeg",
+    "employmentType": "Freelance",
+    "title": "Front-end Developer",
+    "description": "<ul><li>Develop applications using React and Next JS</li><li>Refactoring codes using JavaScript TypeScript</li></ul>",
+    "startedAt": "03-01-2021",
+    "endedAt": "09-01-2021"
+  },
+  {
+    "company": "WebCorp Br",
+    "companyLogoUrl": "/companies-logos/webcorp.jpeg",
+    "employmentType": "Self-employed",
+    "title": "CTO & Co-Founder",
+    "description": "<ul><li>Project's organization</li><li>People and process handling</li><li>Application development in React.js and Node.js</li><li>DevOps</li></ul>",
+    "startedAt": "11-01-2020",
+    "endedAt": "02-01-2021"
+  },
+  {
+    "company": "WebTrip",
+    "companyLogoUrl": "/companies-logos/webtrip.jpeg",
+    "employmentType": "Part-time",
+    "startedAt": "02-01-2019",
+    "endedAt": "11-01-2020",
+    "positions": [
+      {
+        "title": "Junior Full-stack Developer",
+        "startedAt": "01-01-2020",
+        "endedAt": "11-01-2020",
+        "description": "<ul><li>Servers maintenance</li><li>Advanced spreadsheet automation and development using Google Scripts</li><li>Implementation, management and maintenance of telephone lines, IVR and extensions</li><li>Implementation of improvements in the Front and Back-end of the company's websites</li><li>Improvement of internal processes</li><li>Suite CRM development and maintenance</li></ul>"
+      },
+      {
+        "title": "Financial Assistant",
+        "startedAt": "02-01-2019",
+        "endedAt": "01-01-2020",
+        "description": "<ul><li>Accounts Receivable</li><li>Accounts Payable</li><li>Advanced knowledge in WinTour Software</li><li>Customer service</li><li>Issuance and analysis of basic financial reports</li></ul>"
+      }
+    ]
+  }
+]
