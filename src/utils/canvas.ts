@@ -38,7 +38,7 @@ export function renderCanvasStars(canvasRef: HTMLCanvasElement | null) {
 
     const clear = () => {
       if (canvas) {
-        canvas.fillStyle = 'black'
+        canvas.fillStyle = '#171717'
         canvas.fillRect(0, 0, canvasRef.width, canvasRef.height)
       }
     }
