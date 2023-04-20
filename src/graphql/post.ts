@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
 
-export const GET_ALL_SLUGS = gql`
+export const GET_POSTS_SLUGS = gql`
   query {
     posts {
       data {
@@ -12,7 +12,7 @@ export const GET_ALL_SLUGS = gql`
   }
 `
 
-export const GET_ALL = gql`
+export const GET_POSTS = gql`
   query {
     posts {
       data {
@@ -34,7 +34,7 @@ export const GET_ALL = gql`
   }
 `
 
-export const GET_ONE = gql`
+export const GET_POST = gql`
   query ($slugUrl: String!) {
     posts(filters: { urlSlug: { eq: $slugUrl } }) {
       data {
