@@ -34,7 +34,7 @@ export function renderCanvasStars(canvasRef: HTMLCanvasElement | null) {
       return allStars
     }
 
-    const stars = makeStars(10000)
+    const stars = makeStars(5000)
 
     const clear = () => {
       if (canvas) {
@@ -48,7 +48,7 @@ export function renderCanvasStars(canvasRef: HTMLCanvasElement | null) {
         const intensity = brightness * 255
         const rgb = 'rgb(' + intensity + ',' + intensity + ',' + intensity + ')'
         canvas.fillStyle = rgb
-        canvas.fillRect(x, y, 1, 1)
+        canvas.fillRect(x, y, 1, 2)
       }
     }
 

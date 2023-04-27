@@ -8,16 +8,20 @@ import { format, formatDistance } from 'date-fns'
 import { AppLayout } from 'layouts/AppLayout'
 
 import SEO from 'components/SEO'
+import { ProjectProps } from 'components/ProjectCard/props'
+import { ProjectCard } from 'components/ProjectCard'
 
 import { renderCanvasStars } from 'utils/canvas'
 
 import * as Styles from 'styles/pages/home'
 import { primary } from 'styles/fonts'
 
+import projectsFromStorage from 'data/projects.json'
 import jobsFromStorage from 'data/jobs.json'
 
 export default function Home() {
   const jobs: JobProps[] = jobsFromStorage
+  const projects: ProjectProps[] = projectsFromStorage
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -72,6 +76,12 @@ export default function Home() {
           <p>
             Here you can see and test in hands, projects that I worked directly
           </p>
+
+          <div className="projects-wrapper">
+            {projects.slice(0, 4).map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
         </section>
 
         <section id="jobs">
@@ -136,7 +146,10 @@ export default function Home() {
                             new Date(selectedJob.endedAt),
                             new Date(selectedJob.startedAt)
                           )
-                        : format(new Date(selectedJob.startedAt), 'LLL uu')}
+                        : formatDistance(
+                            new Date(selectedJob.startedAt),
+                            new Date()
+                          )}
                     </p>
                   </div>
                 </div>
