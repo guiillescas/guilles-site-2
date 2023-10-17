@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  max-height: 100vh;
-  min-height: 100vh;
+  max-height: calc(100vh - 74px);
+  min-height: calc(100vh - 74px);
 
-  background: ${({ theme }) => theme.colors.neutral[800]};
+  overflow-y: hidden;
+
+  background: ${({ theme }) => theme.colors.neutral[900]};
 
   canvas {
     position: absolute;
@@ -14,6 +16,8 @@ export const Container = styled.div`
 
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
 
     z-index: 1;
   }
@@ -25,8 +29,10 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
 
-  max-height: calc(100vh - 50px);
-  min-height: calc(100vh - 50px);
+  max-height: calc(100vh - 74px);
+  min-height: calc(100vh - 74px);
+
+  overflow-y: hidden;
 
   .message-wrapper {
     width: 100%;
