@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-
-import Modal from 'react-modal'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
+
+import Modal from 'react-modal'
 import { AnimateSharedLayout } from 'framer-motion'
 
 import { ThemeProvider } from 'styled-components'
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Amank</title>
+        <title>Dev Gui Illescas</title>
       </Head>
       <GlobalStyles />
 

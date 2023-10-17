@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PostContainer = styled.main`
+export const ProjectContainer = styled.main`
   section {
     position: relative;
     width: 100%;
@@ -28,11 +28,16 @@ export const PostContainer = styled.main`
       }
     }
 
-    .post-title {
-      font-size: 2.5rem;
-      line-height: 100%;
+    .post-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-      margin: 3rem 0 1rem;
+      margin-bottom: 2rem;
+
+      .project-title {
+        font-size: 2.5rem;
+      }
     }
 
     p {
@@ -42,10 +47,6 @@ export const PostContainer = styled.main`
       code {
         color: ${({ theme }) => theme.colors.neutral[800]};
       }
-    }
-
-    h1 {
-      margin-top: 1.75rem;
     }
 
     hr {

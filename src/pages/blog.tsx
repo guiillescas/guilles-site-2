@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { GetStaticProps } from 'next'
 
 import { useForm } from 'react-hook-form'
-import { GetStaticProps } from 'next'
 import { BlogProps, IFormProps } from 'interfaces/pages/blog'
-import { GET_ALL } from 'graphql/post'
+import { GET_POSTS } from 'graphql/post'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
 import { AppLayout } from 'layouts/AppLayout'
 
+import SEO from 'components/SEO'
 import { PostCard } from 'components/PostCard'
 import { Footer } from 'components/Footer'
 import { ButtonSizesEnum, ButtonVariantsEnum } from 'components/Button/types'
@@ -23,11 +24,12 @@ function Blog(props: BlogProps) {
   const {
     register,
     watch,
+    resetField,
     formState: { errors }
   } = useForm<IFormProps>()
 
   useEffect(() => {
-    if (watch('search').length > 0) {
+    if (watch('search')?.length > 0) {
       setIsSearchActive(true)
     } else {
       setIsSearchActive(false)
@@ -55,6 +57,8 @@ function Blog(props: BlogProps) {
         formError={!!errors.search?.message}
         activeSearch={suggestedPosts.length > 0}
       >
+        <SEO title="Blog" />
+
         <div className="background one" />
         <div className="background two" />
         <div className="background three" />
@@ -83,13 +87,16 @@ function Blog(props: BlogProps) {
                 ))}
               </datalist>
 
-              <Button
-                variant={ButtonVariantsEnum.Secondary}
-                size={ButtonSizesEnum.Small}
-                type="button"
-              >
-                Search
-              </Button>
+              {watch('search')?.length > 0 && (
+                <Button
+                  variant={ButtonVariantsEnum.Secondary}
+                  size={ButtonSizesEnum.Small}
+                  type="button"
+                  onClick={() => resetField('search')}
+                >
+                  Clear
+                </Button>
+              )}
             </div>
 
             <span>{errors.search && errors.search.message}</span>
@@ -137,7 +144,7 @@ function Blog(props: BlogProps) {
               />
             </div>
 
-            <h2 className={secondary.className}>Posts recentes</h2>
+            <h2 className={secondary.className}>Recent posts &#8987;</h2>
 
             <div className="posts-wrapper">
               {props.posts.map((post, index) => {
@@ -174,7 +181,7 @@ export const getStaticProps: GetStaticProps = async () => {
   })
 
   const { data } = await client.query({
-    query: GET_ALL
+    query: GET_POSTS
   })
 
   return {

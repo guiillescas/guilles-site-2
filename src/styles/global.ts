@@ -14,13 +14,15 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  
+
   body {
     background: ${({ theme }) => theme.colors.background};
   }
 
   html {
     font-size: 100%;
+
+    scroll-behavior: smooth !important;
 
     ::-webkit-scrollbar {
       width: 8px;
@@ -29,11 +31,11 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeInterface }>`
       background: ${({ theme }) => theme.colors.neutral[800]};
     }
     ::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.colors.neutral[500]}; 
+      background: ${({ theme }) => theme.colors.neutral[500]};
       border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: ${({ theme }) => theme.colors.neutral[400]}; 
+      background: ${({ theme }) => theme.colors.neutral[400]};
     }
 
     @media (max-width: 768px) {

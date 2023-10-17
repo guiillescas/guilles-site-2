@@ -2,14 +2,12 @@ import { BlogContainerProps } from 'interfaces/pages/blog'
 
 import styled from 'styled-components'
 
-import Image2 from '../../../public/assets/purple-vector-1.png'
-import Image3 from '../../../public/assets/blue-vector-2.png'
-import Image1 from '../../../public/assets/blue-square-vector-1.png'
+import Image2 from '../../../public/assets/vectors/purple-vector-1.png'
+import Image3 from '../../../public/assets/vectors/blue-vector-2.png'
+import Image1 from '../../../public/assets/vectors/blue-square-vector-1.png'
 
 export const BlogContainer = styled.main<BlogContainerProps>`
   height: 100%;
-
-  padding: 0 1rem;
 
   > div.background {
     position: absolute;
@@ -50,7 +48,7 @@ export const BlogContainer = styled.main<BlogContainerProps>`
       background-image: url(${Image2.src});
     }
     &.four {
-      top: 10%;
+      top: 200px;
       right: 10%;
 
       width: 500px;
@@ -66,10 +64,6 @@ export const BlogContainer = styled.main<BlogContainerProps>`
     overflow-y: hidden;
 
     margin: 0 auto;
-  }
-
-  > section {
-    padding: 1rem;
   }
 
   #presentation {
@@ -89,6 +83,12 @@ export const BlogContainer = styled.main<BlogContainerProps>`
         font-size: 4rem;
 
         margin: 0 auto;
+
+        @media (max-width: 640px) {
+          line-height: 3.5rem;
+
+          margin-bottom: 1rem;
+        }
       }
 
       > p {
@@ -142,13 +142,19 @@ export const BlogContainer = styled.main<BlogContainerProps>`
 
           &::placeholder {
             opacity: 0.9;
-            color: ${({ theme }) => theme.colors.neutral[700]};
+            color: ${({ theme }) => theme.colors.neutral[900]};
           }
         }
 
         > button {
           position: absolute;
           right: 4px;
+
+          transition: color 0.3s !important;
+
+          &:hover {
+            color: ${({ theme }) => theme.colors.neutral[700]};
+          }
         }
       }
 
@@ -188,8 +194,12 @@ export const BlogContainer = styled.main<BlogContainerProps>`
     margin-bottom: 10rem;
 
     > h2 {
-      font-size: 2rem;
+      font-size: 3.5rem;
       margin-bottom: 1rem;
+
+      @media (max-width: 640px) {
+        font-size: 3rem;
+      }
     }
 
     .featured-post {
@@ -197,6 +207,10 @@ export const BlogContainer = styled.main<BlogContainerProps>`
       height: 300px;
 
       margin-bottom: 7rem;
+
+      @media (max-width: 640px) {
+        margin-bottom: 16rem;
+      }
     }
 
     .posts-wrapper {
