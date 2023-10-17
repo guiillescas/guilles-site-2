@@ -16,6 +16,8 @@ export const Container = styled.button<IContainerProps>`
 
   transition: background-color 0.2s, border-color 0.2s;
 
+  font-weight: bold;
+
   &:not(:disabled) {
     cursor: pointer;
   }

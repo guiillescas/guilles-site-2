@@ -1,7 +1,7 @@
 [
   {
     "company": "Escola Conquer",
-    "companyLogoUrl": "/companies-logos/conquer.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/conquer.jpeg",
     "employmentType": "Full-time",
     "startedAt": "09-01-2021",
     "positions": [
@@ -26,15 +26,16 @@
   },
   {
     "company": "Amank",
-    "companyLogoUrl": "/companies-logos/amank.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/amank.jpeg",
     "employmentType": "Self-employed",
     "title": "Co-Founder and Senior Front-end developer",
     "description": "<p>As company partner and front-end developer, my objectives are giving the best of usability, performance and code. Make companies life easier is our goal, and growing with quality is out focus.</p>",
-    "startedAt": "08-01-2022"
+    "startedAt": "08-01-2022",
+    "endedAt": "05-01-2023"
   },
   {
     "company": "Dobank",
-    "companyLogoUrl": "/companies-logos/dobank.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/dobank.jpeg",
     "employmentType": "Freelance",
     "title": "Mobile Developer",
     "description": "<p>I acted as the main developer of the DoBank app during the time I was present at the company. It's made in React Native and we use the latest tech options to ensure the best security, experience and usability for the user. We consume the API using GraphQL and a few more things. The main points of this activity are:</p><ul><li>Development of features in the app</li><li>Screen development</li><li>API consumption with GraphQL</li></ul>",
@@ -43,7 +44,7 @@
   },
   {
     "company": "Chamer",
-    "companyLogoUrl": "/companies-logos/chamer.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/chamer.jpeg",
     "employmentType": "Freelance",
     "title": "Front-end Developer",
     "description": "<ul><li>Develop applications using React and Next JS</li><li>Refactoring codes using JavaScript TypeScript</li></ul>",
@@ -52,7 +53,7 @@
   },
   {
     "company": "WebCorp Br",
-    "companyLogoUrl": "/companies-logos/webcorp.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/webcorp.jpeg",
     "employmentType": "Self-employed",
     "title": "CTO & Co-Founder",
     "description": "<ul><li>Project's organization</li><li>People and process handling</li><li>Application development in React.js and Node.js</li><li>DevOps</li></ul>",
@@ -61,7 +62,7 @@
   },
   {
     "company": "WebTrip",
-    "companyLogoUrl": "/companies-logos/webtrip.jpeg",
+    "companyLogoUrl": "/assets/companies-logos/webtrip.jpeg",
     "employmentType": "Part-time",
     "startedAt": "02-01-2019",
     "endedAt": "11-01-2020",

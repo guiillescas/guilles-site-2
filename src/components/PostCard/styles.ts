@@ -16,9 +16,17 @@ export const PostCardContainer = styled.div<PostCardContainerProps>`
         flex-direction: row;
         gap: 1rem;
 
+        @media (max-width: 640px) {
+          flex-direction: column;
+        }
+
         > img {
           width: 50% !important;
           max-height: 300px !important;
+
+          @media (max-width: 640px) {
+            width: 100% !important;
+          }
         }
 
         > div {

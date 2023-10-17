@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "/assets/portfolios/chrizeira.png",
+    "title": "Christian Costa",
+    "description":
+      "A portfolio website, to show all producted content of video maker of Christian Costa.",
+    "link": "https://www.chrizeira.com/",
+    "isDisabled": false
+  },
+  {
+    "id": 2,
+    "imageSrc": "/assets/portfolios/coffee-delivery.png",
+    "title": "Coffee Delivery",
+    "description":
+      "Do you love coffee? Me too. This website is insane, and it is from Rocketseat's course. I made it completly from scratch.",
+    "link": "https://coffee-delivery.guilhermeillescas.dev/",
+    "isDisabled": false
+  }
+]

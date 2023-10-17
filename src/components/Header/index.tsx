@@ -12,6 +12,7 @@ export function Header(): ReactElement {
       <Logo href="/" />
 
       <nav>
+        <Link href="/">Home</Link>
         <Link href="/blog">Blog</Link>
         <Link href="/#about">About</Link>
         <Link href="/#experience">Experience</Link>

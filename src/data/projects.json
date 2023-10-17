@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2,
+    "imageSrc": "/assets/moveit-logo.svg",
+    "title": "MoveIt",
+    "description":
+      "Uma aplicação que te ajuda a focar no que é preciso fazer, e ao mesmo tempo cuida da sua saúde. Curioso ou curiosa? Vem conferir :)",
+    "link": "/project/moveit",
+    "isDisabled": false
+  },
+  {
+    "id": 3,
+    "imageSrc": "/assets/ecoleta-logo.svg",
+    "title": "Ecoleta",
+    "description":
+      "Uma aplicação em que você pode procurar ou cadastrar pontos de coleta de lixo especial em qualquer cidade do Brasil!",
+    "link": "/project/ecoleta"
+  },
+  {
+    "id": 4,
+    "imageSrc": "/assets/todo-logo.svg",
+    "title": "To-do",
+    "description":
+      "Uma aplicação que te ajuda a separar atividades e marcá-las como concluídas. Organização é tudo!",
+    "link": "/project/to-do"
+  },
+  {
+    "id": 5,
+    "imageSrc": "/assets/github-explorer-logo.svg",
+    "title": "Github Explorer",
+    "description":
+      "O Github explorer é um projeto simples, que visou desenvolver a habilidade de integrar aplicações com APIs",
+    "link": "/project/github_explorer"
+  },
+  {
+    "id": 6,
+    "imageSrc": "/assets/watches-logo.svg",
+    "title": "Watches",
+    "description":
+      "Um trabalho final de faculdade, onde fiz juntamente com um amigo meu, Lucas Silva. É uma loja virtual de relógios, onde o foco foi aprender HTML, CSS e JS.",
+    "link": "/project/watches"
+  },
+  {
+    "id": 7,
+    "imageSrc": "/assets/signature-maker-logo.svg",
+    "title": "Signature Maker",
+    "description":
+      "Uma aplicação desenvolvida para melhorar e ajudar o setor de RH de uma empresa em que trabalhei. Ela gera assinaturas de forma automática, só é preciso colocar as informações do funcionário.",
+    "link": "/project/signature-maker"
+  },
+  {
+    "id": 8,
+    "imageSrc": "/assets/happy-logo.svg",
+    "title": "Happy",
+    "description":
+      "Uma aplicação que busca projetos sociais para você fazer, por toda a cidade.",
+    "link": "/project/happy"
+  },
+  {
+    "id": 9,
+    "imageSrc": "/assets/proffy-logo.svg",
+    "title": "Proffy",
+    "description": "O Proffy tem a intenção de conectar alunos com professores.",
+    "link": "/project/proffy"
+  },
+  {
+    "id": 10,
+    "imageSrc": "/assets/blog-guilherme-illescas-logo.png",
+    "title": "Blog Guilherme Illescas",
+    "description":
+      "Um dos projetos mais ousados e legais que eu já fiz. Ficou curioso? Vem dar uma olhada!",
+    "link": "/project/blog-guilherme-illescas"
+  }
+]

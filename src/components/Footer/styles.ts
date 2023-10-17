@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
   width: 100%;
-  min-height: 200px;
+  min-height: 80px;
 
   width: 100%;
   max-width: 1200px;
@@ -38,7 +38,7 @@ export const FooterContainer = styled.div`
       margin-top: 0.5rem;
 
       a {
-        color: ${({ theme }) => theme.colors.neutral[900]};
+        color: ${({ theme }) => theme.colors.neutral[100]};
         transition: opacity 0.2s;
 
         &:hover {

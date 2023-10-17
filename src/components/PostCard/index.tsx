@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
-
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+
 import { format } from 'date-fns'
 
 import { PostCardProps } from './types'
