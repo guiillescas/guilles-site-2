@@ -19,7 +19,7 @@ import { Footer } from 'components/Footer'
 
 import { apolloClient } from 'services/apolloClient'
 
-import * as Styles from 'styles/pages/post'
+import * as Styles from 'styles/Pages/post'
 import { secondary } from 'styles/fonts'
 
 function Post({ post }: PostPageProps): ReactElement {

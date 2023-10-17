@@ -9,7 +9,7 @@ import { AnimateSharedLayout } from 'framer-motion'
 import { ThemeProvider } from 'styled-components'
 
 import { theme } from 'styles/themes/theme'
-import * as Styles from 'styles/pages/app'
+import * as Styles from 'styles/Pages/app'
 import { GlobalStyles } from 'styles/global'
 import { primary } from 'styles/fonts'
 

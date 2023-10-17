@@ -15,7 +15,7 @@ import { Footer } from 'components/Footer'
 import { ButtonSizesEnum, ButtonVariantsEnum } from 'components/Button/types'
 import { Button } from 'components/Button'
 
-import * as Styles from 'styles/pages/blog'
+import * as Styles from 'styles/Pages/blog'
 import { secondary, primary } from 'styles/fonts'
 
 function Blog(props: BlogProps) {
