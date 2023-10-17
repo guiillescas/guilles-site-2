@@ -15,7 +15,7 @@ import { ProjectCard } from 'components/ProjectCard'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from 'styles/Pages/home'
+import * as Styles from 'styles/pages/home'
 import { primary } from 'styles/fonts'
 
 import portfolios from 'data/portfolios.json'

@@ -21,7 +21,7 @@ import { Button } from 'components/Button'
 
 import { apolloClient } from 'services/apolloClient'
 
-import * as Styles from 'styles/Pages/project'
+import * as Styles from 'styles/pages/project'
 import { secondary } from 'styles/fonts'
 
 function Project({ project }: ProjectPageProps): ReactElement {
