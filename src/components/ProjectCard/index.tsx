@@ -9,7 +9,7 @@ export function ProjectCard(props: ProjectCardProps): ReactElement {
   return (
     <Styles.ProjectCardContainer
       href={props.project.link}
-      isInverted={props.isInverted}
+      inverted={props.inverted}
       target="_blank"
     >
       <div className="image-wrapper">

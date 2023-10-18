@@ -126,7 +126,7 @@ export default function Home() {
               <ProjectCard
                 key={project.id}
                 project={project}
-                isInverted={index % 2 === 1}
+                inverted={index % 2 === 1}
               />
             ))}
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
                 {selectedJob.positions && (
                   <div className="job-positions-wrapper">
                     {selectedJob.positions.map(position => (
-                      <div>
+                      <div key={position.title}>
                         <div className="timeline-wrapper"></div>
 
                         <h4>{position.title}</h4>

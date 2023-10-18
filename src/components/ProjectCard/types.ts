@@ -8,9 +8,9 @@ export interface ProjectProps {
 
 export interface ProjectCardProps {
   project: ProjectProps
-  isInverted: boolean
+  inverted: boolean
 }
 
 export interface ProjectCardContainerProps {
-  isInverted: boolean
+  inverted: boolean
 }
