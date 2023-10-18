@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react'
-
 import Head from 'next/head'
 
 import { SEOProps } from './types'
@@ -8,9 +7,6 @@ export default function SEO(props: SEOProps): ReactElement {
   const pageTitle = `${props.title} ${
     !props.shouldExcludeTitleSuffix ? '| Dev Guilherme Illescas' : ''
   }`
-  const pageImage = props.image
-    ? `http://localhost:3000/${props.image}`
-    : undefined
 
   return (
     <Head>
@@ -20,10 +16,13 @@ export default function SEO(props: SEOProps): ReactElement {
         rel="stylesheet"
       />
 
-      {pageImage && <meta name="image" content={pageImage} />}
+      <meta
+        name="image"
+        content={`https://guilhermeillescas.dev/assets/site_screenshot.webp`}
+      />
       <link
         rel="image_src"
-        href={`http://guilhermeillescas.dev${props.image}`}
+        href={`https://guilhermeillescas.dev/assets/site_screenshot.webp`}
       />
 
       {!props.shouldIndexPage && (
@@ -47,12 +46,12 @@ export default function SEO(props: SEOProps): ReactElement {
       <meta property="og:site_name" content={pageTitle} />
       <meta
         property="og:image"
-        content={`https://guilhermeillescas.dev${props.image}`}
+        content={`https://guilhermeillescas.dev/assets/site_screenshot.webp`}
         key="ogimage"
       />
       <meta
         property="og:image:secure_url"
-        content={`https://guilhermeillescas.dev${props.image}`}
+        content={`https://guilhermeillescas.dev/assets/site_screenshot.webp`}
       />
       <meta property="og:image:alt" content="Thumbnail" />
       <meta property="og:image:type" content="image/png" />
@@ -63,8 +62,14 @@ export default function SEO(props: SEOProps): ReactElement {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@guillescas" />
       <meta name="twitter:creator" content="@guillescas" />
-      <meta name="twitter:image" content={pageImage} />
-      <meta name="twitter:image:src" content={pageImage} />
+      <meta
+        name="twitter:image"
+        content={'https://guilhermeillescas.dev/assets/site_screenshot.webp'}
+      />
+      <meta
+        name="twitter:image:src"
+        content={'https://guilhermeillescas.dev/assets/site_screenshot.webp'}
+      />
       <meta name="twitter:image:alt" content="Thumbnail" />
       <meta name="twitter:image:width" content="1200" />
       <meta name="twitter:image:height" content="620" />

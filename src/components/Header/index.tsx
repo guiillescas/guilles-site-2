@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-
 import Link from 'next/link'
 
 import { Logo } from 'components/Logo'
@@ -14,8 +13,8 @@ export function Header(): ReactElement {
       <nav>
         <Link href="/">Home</Link>
         <Link href="/blog">Blog</Link>
-        <Link href="/#about">About</Link>
         <Link href="/#experience">Experience</Link>
+        <Link href="/#about">About</Link>
       </nav>
     </Styles.HeaderContainer>
   )

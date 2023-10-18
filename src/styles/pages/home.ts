@@ -63,7 +63,7 @@ export const HomeContainer = styled.main`
 
     width: 100%;
 
-    margin-bottom: 2.75rem;
+    margin-bottom: 2.5rem;
 
     font-size: 3rem;
     text-align: center;
@@ -77,10 +77,10 @@ export const HomeContainer = styled.main`
 
       background: ${({ theme }) => theme.colors.sky[300]};
 
-      margin: 0 4px;
+      margin: 0.5rem 4px 0;
 
       width: 70px;
-      height: 2.25rem;
+      height: 2rem;
 
       border-radius: 7px;
 
@@ -88,7 +88,7 @@ export const HomeContainer = styled.main`
         background: ${({ theme }) => theme.colors.background};
 
         width: 62px;
-        height: 1.75rem;
+        height: 1.5rem;
 
         border-radius: 7px;
       }
@@ -101,8 +101,6 @@ export const HomeContainer = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /* margin-top: 10rem; */
 
     height: calc(75vh - 24px); // 74px from header
 
@@ -220,6 +218,12 @@ export const HomeContainer = styled.main`
 
   #projects {
     width: 100%;
+
+    margin-top: -5rem;
+
+    @media (max-width: 920px) {
+      margin-top: -1rem;
+    }
 
     .projects-wrapper {
       display: flex;
