@@ -42,6 +42,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -50,6 +53,10 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Luckiest+Guy"
+            rel="stylesheet"
+          ></link>
 
           <link
             rel="apple-touch-icon"

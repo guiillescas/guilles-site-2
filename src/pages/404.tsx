@@ -1,6 +1,5 @@
 import { ReactElement, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 import { AppLayout } from 'layouts/AppLayout'
 
@@ -35,23 +34,12 @@ export default function NotFound(): ReactElement {
           <div className="message-wrapper">
             <p>404</p>
 
-            <div className="border" />
-
             <div className="texts">
               <h2>Page not found</h2>
               <p>Are you lost?</p>
             </div>
 
             <Button onClick={handleClickBackHomeButton}>Back to home</Button>
-          </div>
-
-          <div className="gif-wrapper">
-            <Image
-              src="https://c.tenor.com/qY74aL5yWb0AAAAC/where-the-hell-am-i-where-am-i.gif"
-              alt="a"
-              width={480}
-              height={270}
-            />
           </div>
         </Styles.Content>
       </Styles.Container>
