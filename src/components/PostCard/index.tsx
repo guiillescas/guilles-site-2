@@ -24,7 +24,7 @@ export function PostCard(props: PostCardProps): ReactElement {
       featured={!!props.featured}
     >
       <Image
-        src={`http://localhost:1337${props.imageSrc}`}
+        src={props.imageSrc}
         alt={`Imagem do post sobre ${props.title}`}
         fill
       />

@@ -1,13 +1,17 @@
 export interface PostProps {
-  attributes: {
-    createdAt: string
-    description: string
-    title: string
-    urlSlug: string
-    cover: {
-      data: {
-        attributes: { url: string }
-      }
+  createdAt: string
+  description: string
+  title: string
+  urlSlug: string
+  imagePath: string
+  cover: {
+    data: {
+      attributes: { url: string }
     }
   }
+}
+
+export interface PostApiResponseProps {
+  id: number
+  attributes: PostProps
 }

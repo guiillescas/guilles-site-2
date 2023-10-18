@@ -119,7 +119,7 @@ function Blog(props: BlogProps) {
                   return (
                     <PostCard
                       key={post.attributes.urlSlug}
-                      imageSrc={post.attributes.cover.data.attributes.url}
+                      imageSrc={post.attributes.imagePath}
                       description={post.attributes.description}
                       title={post.attributes.title}
                       postedAt={new Date(post.attributes.createdAt)}
@@ -135,7 +135,7 @@ function Blog(props: BlogProps) {
 
             <div className="featured-post">
               <PostCard
-                imageSrc={featuredPost.attributes.cover.data.attributes.url}
+                imageSrc={featuredPost.attributes.imagePath}
                 description={featuredPost.attributes.description}
                 title={featuredPost.attributes.title}
                 postedAt={new Date(featuredPost.attributes.createdAt)}
@@ -152,7 +152,7 @@ function Blog(props: BlogProps) {
                   return (
                     <PostCard
                       key={post.attributes.urlSlug}
-                      imageSrc={post.attributes.cover.data.attributes.url}
+                      imageSrc={post.attributes.imagePath}
                       description={post.attributes.description}
                       title={post.attributes.title}
                       postedAt={new Date(post.attributes.createdAt)}

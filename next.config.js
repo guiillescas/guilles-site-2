@@ -10,7 +10,7 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ['c.tenor.com'],
+    domains: ['c.tenor.com', 'admin.guilhermeillescas.dev', 'guilhermeillescas.dev'],
     remotePatterns: [
       {
         protocol: 'http',

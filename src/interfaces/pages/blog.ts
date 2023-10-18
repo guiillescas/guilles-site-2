@@ -1,7 +1,7 @@
-import { PostProps } from 'interfaces/post'
+import { PostApiResponseProps } from 'interfaces/post'
 
 export interface BlogProps {
-  posts: PostProps[]
+  posts: PostApiResponseProps[]
 }
 
 export interface BlogContainerProps {

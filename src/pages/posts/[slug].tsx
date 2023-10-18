@@ -33,12 +33,16 @@ function Post({ post }: PostPageProps): ReactElement {
         <section>
           <WriterPostTitle
             author="Guilherme Illescas"
-            imageSrc="/assets/me.jpeg"
+            imageSrc="/assets/me.jpg"
             publishedAt={new Date(post.createdAt)}
           />
 
           <div className="cover">
-            <Image src={`http://localhost:1337${post.cover}`} alt="" fill />
+            <Image
+              src={post.cover}
+              alt={`Imagem representaativa de ${post.title}`}
+              fill
+            />
           </div>
 
           <h1 className={`${secondary.className} post-title`}>{post.title}</h1>
@@ -93,7 +97,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         title: attrs.title,
         createdAt: attrs.createdAt,
         content: html,
-        cover: attrs.cover.data.attributes.url
+        cover: attrs.imagePath
       }
     }
   }

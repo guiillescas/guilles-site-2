@@ -20,6 +20,7 @@ export const GET_POSTS = gql`
           title
           description
           urlSlug
+          imagePath
           createdAt
           cover {
             data {
@@ -43,6 +44,7 @@ export const GET_POST = gql`
           description
           content
           createdAt
+          imagePath
           cover {
             data {
               attributes {
