@@ -6,7 +6,7 @@ import { ProjectCardContainerProps } from './types'
 
 export const ProjectCardContainer = styled(Link)<ProjectCardContainerProps>`
   display: flex;
-  flex-direction: ${({ isInverted }) => (isInverted ? 'row-reverse' : 'row')};
+  flex-direction: ${({ inverted }) => (inverted ? 'row-reverse' : 'row')};
   align-items: center;
   justify-content: center;
 
@@ -69,12 +69,11 @@ export const ProjectCardContainer = styled(Link)<ProjectCardContainerProps>`
   .card-content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: ${({ isInverted }) =>
-      isInverted ? 'flex-end' : 'flex-start'};
+    align-items: ${({ inverted }) => (inverted ? 'flex-end' : 'flex-start')};
     justify-content: flex-start;
 
-    margin-right: ${({ isInverted }) => (isInverted ? '2rem' : 0)};
-    margin-left: ${({ isInverted }) => (isInverted ? 0 : '2rem')};
+    margin-right: ${({ inverted }) => (inverted ? '2rem' : 0)};
+    margin-left: ${({ inverted }) => (inverted ? 0 : '2rem')};
 
     width: fit-content;
     height: 100%;
@@ -98,7 +97,7 @@ export const ProjectCardContainer = styled(Link)<ProjectCardContainerProps>`
     > p {
       max-width: 300px;
 
-      text-align: ${({ isInverted }) => (isInverted ? 'right' : 'left')};
+      text-align: ${({ inverted }) => (inverted ? 'right' : 'left')};
       color: ${({ theme }) => theme.colors.neutral[100]};
     }
   }
