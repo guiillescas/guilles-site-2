@@ -12,6 +12,7 @@ import { AppLayout } from 'layouts/AppLayout'
 import SEO from 'components/SEO'
 import { ProjectProps } from 'components/ProjectCard/types'
 import { ProjectCard } from 'components/ProjectCard'
+import { GoToTop } from 'components/GoToTop'
 
 import { renderCanvasStars } from 'utils/canvas'
 
@@ -330,6 +331,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <GoToTop />
       </Styles.HomeContainer>
     </AppLayout>
   )
