@@ -21,6 +21,8 @@ export const GoToTopContainer = styled.button<GoToTopContainerProps>`
 
   transition: opacity 0.3s, background-color 0.3s;
 
+  z-index: 90;
+
   &:hover {
     background: ${({ theme }) => theme.colors.gray[600]};
   }
