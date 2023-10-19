@@ -2,11 +2,9 @@ import { ReactElement } from 'react'
 
 import { format } from 'date-fns'
 
-import { WorkExperienceProps } from './types'
-
 import * as Styles from './styles'
 
-export function WorkExperience(props: WorkExperienceProps): ReactElement {
+export function WorkExperience(): ReactElement {
   const today = new Date()
 
   return (

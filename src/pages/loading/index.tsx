@@ -2,7 +2,7 @@ import { AppLayout } from 'layouts/AppLayout'
 
 import { Logo } from 'components/Logo'
 
-import * as Styles from 'styles/pages/loading'
+import * as Styles from './styles'
 
 function Loading() {
   return (

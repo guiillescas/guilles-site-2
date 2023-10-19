@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-
 import { useRouter } from 'next/router'
 
 import { LogoProps } from './types'

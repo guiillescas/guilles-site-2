@@ -8,7 +8,6 @@ import rehypePrism from 'rehype-prism-plus'
 import rehypeCodeTitles from 'rehype-code-titles'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
-import { PostPageProps } from 'interfaces/pages/post'
 import { GET_POSTS_SLUGS, GET_POST } from 'graphql/post'
 
 import { AppLayout } from 'layouts/AppLayout'
@@ -19,8 +18,10 @@ import { Footer } from 'components/Footer'
 
 import { apolloClient } from 'services/apolloClient'
 
-import * as Styles from 'styles/pages/post'
+import { PostApiResponseProps, PostPageProps } from './types'
+
 import { secondary } from 'styles/fonts'
+import * as Styles from './styles'
 
 function Post({ post }: PostPageProps): ReactElement {
   return (
@@ -65,7 +66,7 @@ export default Post
 export const getStaticPaths = async () => {
   const { data } = await apolloClient.query({ query: GET_POSTS_SLUGS })
 
-  const paths = data.posts.data.map((post: any) => {
+  const paths = data.posts.data.map((post: PostApiResponseProps) => {
     return { params: { slug: post.attributes.urlSlug } }
   })
 

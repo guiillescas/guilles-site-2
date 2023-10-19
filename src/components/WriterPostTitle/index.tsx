@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
+import Image from 'next/image'
 
 import { RiLinkedinBoxFill, RiTwitterFill, RiGithubFill } from 'react-icons/ri'
-import Image from 'next/image'
 import { format } from 'date-fns'
 
 import { WriterPostTitleProps } from './types'

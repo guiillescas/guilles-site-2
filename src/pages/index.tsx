@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
-import { JobProps } from 'interfaces/pages/home'
 import { motion } from 'framer-motion'
 import { format, formatDistance } from 'date-fns'
 
@@ -16,11 +15,14 @@ import { GoToTop } from 'components/GoToTop'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from 'styles/pages/home'
+import { JobProps } from './types'
+
 import { primary } from 'styles/fonts'
 
 import portfolios from 'data/portfolios.json'
 import jobsFromStorage from 'data/jobs.json'
+
+import * as Styles from './home'
 
 export default function Home() {
   const jobs: JobProps[] = jobsFromStorage

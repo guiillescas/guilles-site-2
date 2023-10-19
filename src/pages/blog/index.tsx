@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import { GetStaticProps } from 'next'
 
 import { useForm } from 'react-hook-form'
-import { BlogProps, IFormProps } from 'interfaces/pages/blog'
 import { GET_POSTS } from 'graphql/post'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
@@ -15,8 +14,10 @@ import { Footer } from 'components/Footer'
 import { ButtonSizesEnum, ButtonVariantsEnum } from 'components/Button/types'
 import { Button } from 'components/Button'
 
-import * as Styles from 'styles/pages/blog'
+import { BlogProps, IFormProps } from './types'
+
 import { secondary, primary } from 'styles/fonts'
+import * as Styles from './styles'
 
 function Blog(props: BlogProps) {
   const [isSearchActive, setIsSearchActive] = useState(false)
