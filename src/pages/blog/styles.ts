@@ -1,6 +1,6 @@
-import { BlogContainerProps } from 'interfaces/pages/blog'
-
 import styled from 'styled-components'
+
+import { BlogContainerProps } from './types'
 
 import Image2 from '../../../public/assets/vectors/purple-vector-1.png'
 import Image3 from '../../../public/assets/vectors/blue-vector-2.png'

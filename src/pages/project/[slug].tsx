@@ -9,7 +9,6 @@ import rehypeCodeTitles from 'rehype-code-titles'
 import { FiExternalLink } from 'react-icons/fi'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
-import { ProjectPageProps } from 'interfaces/pages/project'
 import { GET_PROJECT, GET_PROJECTS_SLUGS } from 'graphql/projects'
 
 import { AppLayout } from 'layouts/AppLayout'
@@ -21,8 +20,11 @@ import { Button } from 'components/Button'
 
 import { apolloClient } from 'services/apolloClient'
 
-import * as Styles from 'styles/pages/project'
+import { PostApiResponseProps } from 'pages/posts/types'
+import { ProjectPageProps } from './types'
+
 import { secondary } from 'styles/fonts'
+import * as Styles from './styles'
 
 function Project({ project }: ProjectPageProps): ReactElement {
   function handleOpenProject() {
@@ -81,7 +83,7 @@ export default Project
 export const getStaticPaths = async () => {
   const { data } = await apolloClient.query({ query: GET_PROJECTS_SLUGS })
 
-  const paths = data.projects.data.map((post: any) => {
+  const paths = data.projects.data.map((post: PostApiResponseProps) => {
     return { params: { slug: post.attributes.urlSlug } }
   })
 

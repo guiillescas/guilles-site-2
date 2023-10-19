@@ -1,4 +1,4 @@
-import { PostApiResponseProps } from 'interfaces/post'
+import { PostApiResponseProps } from 'pages/posts/types'
 
 export interface BlogProps {
   posts: PostApiResponseProps[]
