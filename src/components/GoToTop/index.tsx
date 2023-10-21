@@ -39,6 +39,7 @@ export function GoToTop(): ReactElement {
       aria-hidden={!isButtonVisible}
       isButtonVisible={isButtonVisible}
       title="Go to the top"
+      data-testid="go-to-top-component"
     >
       <FiChevronUp size={20} />
     </Styles.GoToTopContainer>

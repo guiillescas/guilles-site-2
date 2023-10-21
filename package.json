@@ -9,6 +9,10 @@
     "lint": "next lint",
     "test": "jest --watchAll"
   },
+  "moduleDirectories": [
+    "node_modules",
+    "./src/"
+  ],
   "dependencies": {
     "@apollo/client": "^3.7.7",
     "@next/font": "^13.1.6",

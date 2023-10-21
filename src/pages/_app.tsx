@@ -8,7 +8,7 @@ import { AnimateSharedLayout } from 'framer-motion'
 
 import { ThemeProvider } from 'styled-components'
 
-import { theme } from 'styles/themes/theme'
+import { primary as primaryTheme } from 'styles/themes/primary'
 import * as Styles from 'styles/pages/app'
 import { GlobalStyles } from 'styles/global'
 import { primary } from 'styles/fonts'
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router])
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={primaryTheme}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
