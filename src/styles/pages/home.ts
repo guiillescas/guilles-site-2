@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import Image3 from '../../public/assets/vectors/blue-vector-2.png'
+import Image3 from '../../../public/assets/vectors/blue-vector-2.png'
 
 export const HomeContainer = styled.main`
   width: 100%;
