@@ -8,12 +8,12 @@ import { AnimateSharedLayout } from 'framer-motion'
 
 import { ThemeProvider } from 'styled-components'
 
+import * as Styles from 'styles/pages/app'
 import { GlobalStyles } from 'styles/global'
 import { primary } from 'styles/fonts'
 import { theme } from '../styles/themes/theme'
 
-import Loading from './loading'
-import * as Styles from './app'
+import Loading from './laoding'
 
 Modal.setAppElement('#__next')
 

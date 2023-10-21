@@ -25,8 +25,7 @@ const nextConfig = {
         pathname: '/**'
       }
     ]
-  },
-  pageExtensions: ['.tsx', '.ts']
+  }
 }
 
 module.exports = nextConfig

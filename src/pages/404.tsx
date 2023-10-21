@@ -8,7 +8,7 @@ import { Button } from 'components/Button'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import * as Styles from './styles'
+import * as Styles from 'styles/pages/404'
 
 export default function NotFound(): ReactElement {
   const router = useRouter()

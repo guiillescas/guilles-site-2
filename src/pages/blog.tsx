@@ -14,10 +14,10 @@ import { Footer } from 'components/Footer'
 import { ButtonSizesEnum, ButtonVariantsEnum } from 'components/Button/types'
 import { Button } from 'components/Button'
 
-import { BlogProps, IFormProps } from './types'
+import { BlogProps, IFormProps } from 'interfaces/pages/blog'
 
+import * as Styles from 'styles/pages/blog'
 import { secondary, primary } from 'styles/fonts'
-import * as Styles from './styles'
 
 function Blog(props: BlogProps) {
   const [isSearchActive, setIsSearchActive] = useState(false)

@@ -18,10 +18,10 @@ import { Footer } from 'components/Footer'
 
 import { apolloClient } from 'services/apolloClient'
 
-import { PostApiResponseProps, PostPageProps } from './types'
+import { PostApiResponseProps, PostPageProps } from 'interfaces/pages/posts'
 
+import * as Styles from 'styles/pages/posts'
 import { secondary } from 'styles/fonts'
-import * as Styles from './styles'
 
 function Post({ post }: PostPageProps): ReactElement {
   return (

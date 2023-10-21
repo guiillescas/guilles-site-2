@@ -15,14 +15,13 @@ import { GoToTop } from 'components/GoToTop'
 
 import { renderCanvasStars } from 'utils/canvas'
 
-import { JobProps } from './types'
+import { JobProps } from 'interfaces/pages/home'
 
+import * as Styles from 'styles/pages/home'
 import { primary } from 'styles/fonts'
 
 import portfolios from 'data/portfolios.json'
 import jobsFromStorage from 'data/jobs.json'
-
-import * as Styles from './home'
 
 export default function Home() {
   const jobs: JobProps[] = jobsFromStorage
