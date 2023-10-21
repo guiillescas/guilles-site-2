@@ -20,11 +20,11 @@ import { Button } from 'components/Button'
 
 import { apolloClient } from 'services/apolloClient'
 
-import { PostApiResponseProps } from 'pages/posts/types'
-import { ProjectPageProps } from './types'
+import { ProjectPageProps } from 'interfaces/pages/project'
+import { PostApiResponseProps } from 'interfaces/pages/posts'
 
+import * as Styles from 'styles/pages/project'
 import { secondary } from 'styles/fonts'
-import * as Styles from './styles'
 
 function Project({ project }: ProjectPageProps): ReactElement {
   function handleOpenProject() {

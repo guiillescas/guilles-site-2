@@ -30,6 +30,7 @@
           ["/lib/", "/(lib)/"],
           ["/utils/", "/(utils)/"],
           ["/config/", "/(config)/"],
+          ["/interfaces/", "/(interfaces)/"],
           ["/types/", "/(types)/"],
           ["/styles/", "/(styles)/"],
           ["/data/", "/(data)/"],
