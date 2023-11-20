@@ -86,4 +86,4 @@ export const primary = {
       Mono: 'Roboto Mono'
     }
   }
-}
+} as const
