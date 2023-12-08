@@ -3,5 +3,5 @@ export interface SEOProps {
   description?: string
   image?: string
   shouldExcludeTitleSuffix?: boolean
-  shouldIndexPage?: boolean
+  shouldNotIndexPage?: boolean
 }

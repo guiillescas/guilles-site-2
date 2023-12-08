@@ -449,6 +449,10 @@ export const HomeContainer = styled.main`
               align-items: flex-start;
               justify-content: center;
 
+              > span {
+                font-weight: bold;
+              }
+
               > p {
                 font-size: 0.75rem;
               }
@@ -466,9 +470,10 @@ export const HomeContainer = styled.main`
 
           .job-positions-wrapper {
             > div {
-              h4 {
+              > p {
                 margin: 0.25rem 0 0;
                 font-size: 0.875rem;
+                font-weight: bold;
               }
 
               span {

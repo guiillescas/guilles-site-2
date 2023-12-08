@@ -213,7 +213,7 @@ export default function Home() {
                   />
 
                   <div>
-                    <h3>{selectedJob.company}</h3>
+                    <span>{selectedJob.company}</span>
                     <p>
                       {selectedJob.employmentType} |{' '}
                       {selectedJob.endedAt
@@ -231,7 +231,7 @@ export default function Home() {
 
                 {!selectedJob.positions && (
                   <div className="job-without-positions-info-wrapper">
-                    <h4>{selectedJob.title}</h4>
+                    <p>{selectedJob.title}</p>
 
                     <span>
                       {format(new Date(selectedJob.startedAt), 'LLL uu')}
@@ -263,7 +263,7 @@ export default function Home() {
                       <div key={position.title}>
                         <div className="timeline-wrapper"></div>
 
-                        <h4>{position.title}</h4>
+                        <p>{position.title}</p>
 
                         <span>
                           {format(new Date(position.startedAt), 'LLL uu')}

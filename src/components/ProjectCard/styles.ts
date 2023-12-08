@@ -86,15 +86,17 @@ export const ProjectCardContainer = styled(Link)<ProjectCardContainerProps>`
       text-align: center;
     }
 
-    > h3 {
+    > p {
       margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
       color: ${({ theme }) => theme.colors.neutral[100]};
 
       @media (max-width: 768px) {
       }
     }
 
-    > p {
+    > span {
       max-width: 300px;
 
       text-align: ${({ inverted }) => (inverted ? 'right' : 'left')};

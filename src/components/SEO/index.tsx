@@ -25,7 +25,7 @@ export default function SEO(props: SEOProps): ReactElement {
         href={`https://guilhermeillescas.dev/assets/site_screenshot.webp`}
       />
 
-      {!props.shouldIndexPage && (
+      {props.shouldNotIndexPage && (
         <meta name="robots" content="noindex,nofollow" />
       )}
 

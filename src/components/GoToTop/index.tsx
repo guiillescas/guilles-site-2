@@ -36,7 +36,7 @@ export function GoToTop(): ReactElement {
     <Styles.GoToTopContainer
       type="button"
       onClick={scrollToTop}
-      aria-hidden={!isButtonVisible}
+      // aria-hidden={!isButtonVisible}
       isButtonVisible={isButtonVisible}
       title="Go to the top"
     >

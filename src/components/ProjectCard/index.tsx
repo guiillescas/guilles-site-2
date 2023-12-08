@@ -22,8 +22,8 @@ export function ProjectCard(props: ProjectCardProps): ReactElement {
       </div>
 
       <div className="card-content-wrapper">
-        <h3>{props.project.title}</h3>
-        <p>{props.project.description}</p>
+        <p>{props.project.title}</p>
+        <span>{props.project.description}</span>
       </div>
     </Styles.ProjectCardContainer>
   )
