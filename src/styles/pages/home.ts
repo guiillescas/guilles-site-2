@@ -470,6 +470,12 @@ export const HomeContainer = styled.main`
 
           .job-positions-wrapper {
             > div {
+              margin-top: 2rem;
+
+              &:first-child {
+                margin-top: 0;
+              }
+
               > p {
                 margin: 0.25rem 0 0;
                 font-size: 0.875rem;
@@ -485,6 +491,7 @@ export const HomeContainer = styled.main`
                 margin-top: 0.5rem;
 
                 ul {
+                  margin-top: 0.75rem;
                   margin-bottom: 1rem;
                   margin-left: 1rem;
                   line-height: 1.25rem;

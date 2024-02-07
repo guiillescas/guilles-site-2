@@ -4,7 +4,7 @@
     "companyLogoUrl": "/assets/companies-logos/previdenciarista.jpeg",
     "employmentType": "Full-time",
     "title": "Senior Front-end Developer",
-    "description": "<p>As a senior front end developer, I am responsible for maintaining applications at the highest standard and stability for our 22.000 active customers on the platform can perform pension calculations and more. My main responsibilities are:</p><ul><li>Development of features</li><li>Implementation of SEO techniques</li><li>Bug fixes</li><li>Code refactoring</li><li>Architecture planning</li></ul>",
+    "description": "<p>As a senior front-end developer, I am responsible for maintaining applications to the highest standards and ensuring stability for our 22,000+ active customers on the platform, enabling them to perform pension calculations and more. Additionally, I oversee the main website, ensuring it achieves the highest levels of SEO and performance.</p><p>I enhanced the website's performance by 22%, improved SEO by approximately 9%, and implemented good practices, resulting in a 29% enhancement.</p><p>My main responsibilities are:</p><ul><li>Development of new features using Next, HTML, Tailwind CSS, Typescript and React Hooks;</li><li>Implementation of SEO techniques using Google Analytics and Google Tag Manager;</li><li>Bug fixes</li><li>Code refactoring</li><li>Architecture planning</li></ul>",
     "startedAt": "2023-12-01"
   },
   {
@@ -17,7 +17,7 @@
       {
         "title": "Senior Front-end Developer",
         "startedAt": "2022-10-01",
-        "description": "<ul><li>Development and training of technical skills and soft skills in team members</li><li>Content creator for programming courses</li><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
+        "description": "<p>I served as the lead front-end developer at Escola Conquer, contributing to multiple teams simultaneously. The Conquer Plus Platform has already supported over 2 million customers worldwide, issuing more than 1 million certificates. I was involved in all the planning and construction of this platform, selecting the technologies and architecting the entire project.</p><p>My responsibilities included:</p><ul><li>Training team members in both technical skills and soft skills;</li><li>Developing new features using Next.js, Styled-Components, HTML, Jest, Storybook, React Hooks, and Typescript</li><li>Addressing bugs through the use of Jest and debugging techniques;</li><li>Implementing improvements to enhance performance, validated through Google Lighthouse;</li><li>Planning features and system architectures;</li><li>Establishing and maintaining the Design System using Figma and implementing micro-front-end with Single SPA;</li></ul>"
       },
       {
         "title": "Mid Front-end Developer II",
