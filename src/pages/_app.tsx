@@ -7,6 +7,7 @@ import Modal from 'react-modal'
 import { AnimateSharedLayout } from 'framer-motion'
 
 import { ThemeProvider } from 'styled-components'
+import GoogleAnalytics from 'components/GoogleAnalytics'
 
 import * as Styles from 'styles/pages/app'
 import { GlobalStyles } from 'styles/global'
@@ -44,6 +45,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Dev Gui Illescas</title>
       </Head>
       <GlobalStyles />
+
+      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+        <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+      ) : null}
 
       <AnimateSharedLayout>
         <Styles.AppContainer className={primary.className}>
