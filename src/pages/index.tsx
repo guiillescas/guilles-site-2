@@ -75,8 +75,9 @@ export default function Home() {
             </h1>
             <h2 className={primary.className}>I build stuff for the web.</h2>
             <p>
-              I'm a Senior front-end developer, able to build exceptional web
-              apps with high performance and excelent user experience.
+              I'm a Senior front-end developer, proficient in building
+              exceptional web apps with high performance and excelent user
+              experience.
             </p>
 
             <div className="social-wrapper">
@@ -305,16 +306,16 @@ export default function Home() {
           <div>
             <div>
               <p>
-                As a front-end developer, I have already developed multiple
-                applications that impacted more than 1 million customers arround
-                the world. Always focused on offering an excellent experience
-                and high performance for the customer
+                As a front-end developer, I have developed multiple applications
+                that have impacted over 1 million customers worldwide. I am
+                always focused on providing an excellent user experience and
+                high performance.
               </p>
 
               <p>
-                I'm passionate to make this world better with things that I do
-                and with who I am. I love helping people to increase themselves
-                and boost them to get results.
+                I am passionate about making the world a better place through my
+                work and who I am. I enjoy helping people grow and empowering
+                them to achieve results.
               </p>
             </div>
 
