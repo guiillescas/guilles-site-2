@@ -478,8 +478,7 @@ export const HomeContainer = styled.main`
 
               > p {
                 margin: 0.25rem 0 0;
-                font-size: 0.875rem;
-                font-weight: bold;
+                font-size: 1rem;
               }
 
               span {

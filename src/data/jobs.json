@@ -3,8 +3,8 @@
     "company": "Previdenciarista",
     "companyLogoUrl": "/assets/companies-logos/previdenciarista.jpeg",
     "employmentType": "Full-time",
-    "title": "Senior Front-end Developer",
-    "description": "<p>As a senior front-end developer, I am responsible for maintaining applications to the highest standards and ensuring stability for our 22,000+ active customers on the platform, enabling them to perform pension calculations and more. Additionally, I oversee the main website, ensuring it achieves the highest levels of SEO and performance. I enhanced the website's performance by 22%, improved SEO by approximately 9%, and implemented good practices, resulting in a 29% enhancement.</p><p>My main responsibilities are:</p><ul><li>Development of new features using Next, HTML, Tailwind CSS, Typescript and React Hooks;</li><li>Implementation of SEO techniques using Google Analytics and Google Tag Manager;</li><li>Bug fixes</li><li>Code refactoring</li><li>Architecture planning</li></ul>",
+    "title": "Senior Software Engineer",
+    "description": "<p>I am responsible for maintaining applications to the highest standards and ensuring stability for our 22,000+ active customers on the platform, enabling them to perform pension calculations and more. Additionally, I oversee the main website, ensuring it achieves the highest levels of SEO and performance. I enhanced the website's performance by 22%, improved SEO by approximately 9%, and implemented good practices, resulting in a 29% enhancement.</p><ul><li><b>Feature development:</b> Development of new features using Next, HTML, Tailwind CSS, Typescript and React Hooks;</li><li><b>SEO improvement: </b>Implementation of SEO techniques using Google Analytics and Google Tag Manager;</li><li><b>Bug fixes:</b> Bug-fixing initiatives, enhancing software reliability and user satisfaction;</li><li><b>Code refactoring:</b> I am responsible to reduce tones of code lines, increasing development experience and improving the efficiency.</li></ul>",
     "startedAt": "2023-12-01"
   },
   {
@@ -15,22 +15,16 @@
     "endedAt": "2023-09-01",
     "positions": [
       {
-        "title": "Senior Front-end Developer",
+        "title": "Senior Software Engineer",
         "startedAt": "2022-10-01",
         "endedAt": "2023-09-01",
         "description": "<p>As the Lead Software Engineer, I spearheaded the development of the Conquer Plus Platform, a project that has significantly impacted over 2 million customers globally by issuing more than 1 million certificates. My role was pivotal in every phase of the platform's lifecycle, from the initial planning stages to the selection of cutting-edge technologies and the architecture of the entire system.</p><ul><li><b>Public Speaking:</b> Delivered insightful presentations on key technical topics, establishing thought leadership within and beyond the team.</li><li><b>Team Support:</b> Provided ongoing support and mentorship to team members, enhancing team cohesion and individual skill levels.</li><li><b>Content Creation:</b> Authored engaging programming course content, contributing to the development and dissemination of technical knowledge.</li><li><b>Development and Training:</b> Spearheaded the upskilling of team members in both technical and soft skills, fostering a collaborative and high-performing team environment.</li><li><b>Feature Development:</b> Led the design and implementation of new features, significantly enhancing platform functionality and user experience.</li><li><b>Bug Fixes:</b> Directed effective bug resolution efforts, substantially improving software reliability and performance.</li></ul>"
       },
       {
-        "title": "Mid Front-end Developer II",
-        "startedAt": "2022-04-01",
+        "title": "Software Engineer",
+        "startedAt": "2021-10-01",
         "endedAt": "2022-10-01",
-        "description": "<ul><li>Development and training of technical skills and soft skills in team members</li><li>Content creator for programming courses</li><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
-      },
-      {
-        "title": "Mid Front-end Developer I",
-        "startedAt": "2021-09-01",
-        "endedAt": "2022-03-01",
-        "description": "<ul><li>Development of new features</li><li>Bug fixes</li><li>Implementation of improvements in the Conquer Plus platform</li><li>Implementation of codes in order to improve the performance of the Conquer Plus platform</li></ul>"
+        "description": "<p>I drove comprehensive enhancements in both technology and team capabilities, significantly boosting platform performance and fostering a culture of continuous learning and innovation.</p><ul><li><b>Feature Development:</b> Design and implementation of new features, significantly enhancing platform functionality and user experience.</li><li><b>Bug Fixes:</b> Directed effective bug resolution efforts, substantially improving software reliability and performance.</li><li><b>Platform Improvements:</b> Implemented strategic enhancements to the Conquer Plus platform, optimizing operational efficiency and user satisfaction.</li><li><b>Performance Optimization:</b> Engineered and deployed code optimizations, markedly boosting the platform's performance and scalability.</li><li><b>Documentation:</b> Produced comprehensive code documentation, ensuring maintainability and easing future development efforts.</li></ul>"
       }
     ]
   },
@@ -38,8 +32,8 @@
     "company": "Amank",
     "companyLogoUrl": "/assets/companies-logos/amank.jpeg",
     "employmentType": "Self-employed",
-    "title": "Co-Founder and Senior Front-end developer",
-    "description": "<p>As company partner and front-end developer, my objectives are giving the best of usability, performance and code. Make companies life easier is our goal, and growing with quality is out focus.</p><p>My main objectives were:</p><ul><li>Create the platform and implement features using React, Tailwind CSS, Typescript and Storybook</li></ul>",
+    "title": "Co-Founder & Senior Software Engineer",
+    "description": "<p>I focused on maximizing usability, performance, and code excellence, in line with our mission to make business operations simpler and prioritize quality growth. Our efforts led to successful investment rounds and the strategic sale of the company.</p><ul><li><b>New Features Development:</b> Led the development of over 20 new features, significantly enhancing platform functionality and user satisfaction.</li><li><b>Bug Fixes:</b> Directed the resolution of bugs, ensuring optimal platform reliability and enhancing user experience, reducing bugs to zero.</li><li><b>Software Architecture Planning:</b> Managed the planning and design of the software architecture to ensure scalability and performance, developing a system that supported a 100% increase in user load without performance compromise.</li><li><b>Performance Improvement Coding:</b> Spearheaded code optimizations to enhance platform efficiency and user experience, achieving a almost 70% improvement in platform load.</li></ul>",
     "startedAt": "2022-08-01",
     "endedAt": "2023-05-01"
   },
@@ -47,8 +41,8 @@
     "company": "Dobank",
     "companyLogoUrl": "/assets/companies-logos/dobank.jpeg",
     "employmentType": "Freelance",
-    "title": "Mobile Developer",
-    "description": "<p>I acted as the main developer of the DoBank app during the time I was present at the company. It's made in React Native and we use the latest tech options to ensure the best security, experience and usability for the user. We consume the API using GraphQL and a few more things. The main points of this activity are:</p><ul><li>Development of features in the app</li><li>Screen development</li><li>API consumption with GraphQL</li></ul>",
+    "title": "Software Engineer",
+    "description": "<p>Performance Improvement Coding: Spearheaded code optimizations to enhance platform efficiency and user experience, achieving a almost 70% improvement in platform load.</p><ul><li><b>App Development and Feature Creation:</b> Pioneered the entire app development, crafting its core features and architecture, which led to a robust platform with enhanced user engagement and satisfaction.</li><li><b>Screen Development:</b> Implementation of all app screens, focusing on intuitive user interfaces and seamless navigation.</li><li><b>API Consumption with GraphQL:</b> Engineered the app's data management system using GraphQL, optimizing performance and data retrieval.</li></ul>",
     "startedAt": "2021-06-01",
     "endedAt": "2022-09-01"
   },
