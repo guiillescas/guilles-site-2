@@ -50,8 +50,8 @@
     "company": "Chamer",
     "companyLogoUrl": "/assets/companies-logos/chamer.jpeg",
     "employmentType": "Freelance",
-    "title": "Front-end Developer",
-    "description": "<ul><li>Develop applications using React and Next JS</li><li>Refactoring codes using JavaScript TypeScript</li></ul>",
+    "title": "Software Engineer",
+    "description": "<p>I was pivotal in driving innovation and development across various projects. Within a dynamic, small team environment, I specialized in feature development, e-commerce, and dashboard creation, utilizing REST APIs for seamless database integration.</p><ul><li><b>Feature Development:</b> Creation and implementation of key features, enhancing user interaction and functionality across platforms using React and Typescript.</li><li><b>E-commerce and Dashboard Development:</b> Spearheaded the development of e-commerce platforms and data-driven dashboards, improving business operations and decision-making processes.</li><li><b>Database Integration:</b> Expertly managed database connections through REST APIs, ensuring efficient data flow and system reliability</li><li>SEO Implementation: Implemented advanced SEO techniques to enhance online visibility and search rankings for our platforms. I Improved search engine rankings by over 20%, significantly increasing organic traffic and user acquisition.</li><li><b>App Performance Optimization:</b> Focused on optimizing the performance of applications, reducing load times and improving responsiveness</li></ul>",
     "startedAt": "2021-03-01",
     "endedAt": "2021-09-01"
   },
