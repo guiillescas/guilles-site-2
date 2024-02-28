@@ -16,14 +16,14 @@
     "positions": [
       {
         "title": "Senior Software Engineer",
-        "startedAt": "2022-10-01",
-        "endedAt": "2023-09-01",
+        "startedAt": "2022-11-01",
+        "endedAt": "2023-11-01",
         "description": "<p>As the Lead Software Engineer, I spearheaded the development of the Conquer Plus Platform, a project that has significantly impacted over 2 million customers globally by issuing more than 1 million certificates. My role was pivotal in every phase of the platform's lifecycle, from the initial planning stages to the selection of cutting-edge technologies and the architecture of the entire system.</p><ul><li><b>Public Speaking:</b> Delivered insightful presentations on key technical topics, establishing thought leadership within and beyond the team.</li><li><b>Team Support:</b> Provided ongoing support and mentorship to team members, enhancing team cohesion and individual skill levels.</li><li><b>Content Creation:</b> Authored engaging programming course content, contributing to the development and dissemination of technical knowledge.</li><li><b>Development and Training:</b> Spearheaded the upskilling of team members in both technical and soft skills, fostering a collaborative and high-performing team environment.</li><li><b>Feature Development:</b> Led the design and implementation of new features, significantly enhancing platform functionality and user experience.</li><li><b>Bug Fixes:</b> Directed effective bug resolution efforts, substantially improving software reliability and performance.</li></ul>"
       },
       {
         "title": "Software Engineer",
         "startedAt": "2021-10-01",
-        "endedAt": "2022-10-01",
+        "endedAt": "2022-11-01",
         "description": "<p>I drove comprehensive enhancements in both technology and team capabilities, significantly boosting platform performance and fostering a culture of continuous learning and innovation.</p><ul><li><b>Feature Development:</b> Design and implementation of new features, significantly enhancing platform functionality and user experience.</li><li><b>Bug Fixes:</b> Directed effective bug resolution efforts, substantially improving software reliability and performance.</li><li><b>Platform Improvements:</b> Implemented strategic enhancements to the Conquer Plus platform, optimizing operational efficiency and user satisfaction.</li><li><b>Performance Optimization:</b> Engineered and deployed code optimizations, markedly boosting the platform's performance and scalability.</li><li><b>Documentation:</b> Produced comprehensive code documentation, ensuring maintainability and easing future development efforts.</li></ul>"
       }
     ]
@@ -59,7 +59,7 @@
     "company": "WebCorp Br",
     "companyLogoUrl": "/assets/companies-logos/webcorp.jpeg",
     "employmentType": "Self-employed",
-    "title": "CTO & Co-Founder",
+    "title": "Co-Founder & Software Engineer",
     "description": "<ul><li>Project's organization</li><li>People and process handling</li><li>Application development in React.js and Node.js</li><li>DevOps</li></ul>",
     "startedAt": "2020-11-01",
     "endedAt": "2021-02-01"
