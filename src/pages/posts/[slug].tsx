@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Script from 'next/script'
 import Image from 'next/image'
 import Head from 'next/head'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 
 import rehypePrism from 'rehype-prism-plus'
 import rehypeCodeTitles from 'rehype-code-titles'
@@ -63,20 +63,20 @@ function Post({ post }: PostPageProps): ReactElement {
 
 export default Post
 
-// export const getStaticPaths = async () => {
-//   const { data } = await apolloClient.query({ query: GET_POSTS_SLUGS })
+export const getStaticPaths = async () => {
+  const { data } = await apolloClient.query({ query: GET_POSTS_SLUGS })
 
-//   const paths = data.posts.data.map((post: PostApiResponseProps) => {
-//     return { params: { slug: post.attributes.urlSlug } }
-//   })
+  const paths = data.posts.data.map((post: PostApiResponseProps) => {
+    return { params: { slug: post.attributes.urlSlug } }
+  })
 
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+  return {
+    paths,
+    fallback: true
+  }
+}
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { data } = await apolloClient.query({
     query: GET_POST,
     variables: {
@@ -100,6 +100,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
         content: html,
         cover: attrs.imagePath
       }
-    }
+    },
+    revalidate: 60 * 60 * 24 * 7
   }
 }
