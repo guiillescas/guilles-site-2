@@ -63,20 +63,20 @@ function Post({ post }: PostPageProps): ReactElement {
 
 export default Post
 
-export const getStaticPaths = async () => {
-  const { data } = await apolloClient.query({ query: GET_POSTS_SLUGS })
+// export const getStaticPaths = async () => {
+//   const { data } = await apolloClient.query({ query: GET_POSTS_SLUGS })
 
-  const paths = data.posts.data.map((post: PostApiResponseProps) => {
-    return { params: { slug: post.attributes.urlSlug } }
-  })
+//   const paths = data.posts.data.map((post: PostApiResponseProps) => {
+//     return { params: { slug: post.attributes.urlSlug } }
+//   })
 
-  return {
-    paths,
-    fallback: false
-  }
-}
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
 
-export const getServerSidePRops: GetServerSideProps = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const { data } = await apolloClient.query({
     query: GET_POST,
     variables: {
