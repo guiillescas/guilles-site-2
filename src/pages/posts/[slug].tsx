@@ -100,6 +100,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         content: html,
         cover: attrs.imagePath
       }
-    }
+    },
+    revalidate: 1
   }
 }
