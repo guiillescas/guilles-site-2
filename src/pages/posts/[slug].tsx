@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Script from 'next/script'
 import Image from 'next/image'
 import Head from 'next/head'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 
 import rehypePrism from 'rehype-prism-plus'
 import rehypeCodeTitles from 'rehype-code-titles'
@@ -76,7 +76,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getServerSidePRops: GetServerSideProps = async ({ params }) => {
   const { data } = await apolloClient.query({
     query: GET_POST,
     variables: {
@@ -100,7 +100,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         content: html,
         cover: attrs.imagePath
       }
-    },
-    revalidate: 1
+    }
   }
 }
