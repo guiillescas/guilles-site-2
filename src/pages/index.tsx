@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -13,8 +13,6 @@ import { ProjectProps } from 'components/ProjectCard/types'
 import { ProjectCard } from 'components/ProjectCard'
 import { GoToTop } from 'components/GoToTop'
 
-import { renderCanvasStars } from 'utils/canvas'
-
 import { JobProps } from 'interfaces/pages/home'
 
 import * as Styles from 'styles/pages/home'
@@ -27,8 +25,6 @@ export default function Home() {
   const jobs: JobProps[] = jobsFromStorage
   const projects: ProjectProps[] = portfolios
 
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-
   const [selectedJob, setSelectedJob] = useState<JobProps>(jobs[0])
 
   function handleSetSelectedJob(jobCompany: string) {
@@ -38,10 +34,6 @@ export default function Home() {
       setSelectedJob(formattedJob)
     }
   }
-
-  useEffect(() => {
-    renderCanvasStars(canvasRef.current)
-  }, [])
 
   const variants = {
     show: {
@@ -62,9 +54,6 @@ export default function Home() {
     <AppLayout>
       <Styles.HomeContainer>
         <SEO title="Home" />
-
-        {/* <canvas ref={canvasRef}></canvas>
-        <div className="canvas-background" /> */}
 
         <section id="introduction">
           <div className="vector" />

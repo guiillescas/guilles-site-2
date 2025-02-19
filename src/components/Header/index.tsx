@@ -12,7 +12,7 @@ export function Header(): ReactElement {
 
       <nav>
         <Link href="/">Home</Link>
-        <Link href="/blog">Blog</Link>
+        {/* <Link href="/blog">Blog</Link> */}
         <Link href="/#experience">Experience</Link>
         <Link href="/#about">About</Link>
       </nav>

@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "imageSrc": "/assets/portfolios/chrizeira.png",
-    "title": "Christian Costa",
+    "imageSrc": "/assets/portfolios/guidefy.png",
+    "title": "guidefy",
     "description":
-      "A portfolio website, to show all producted content of video maker of Christian Costa.",
-    "link": "https://www.chrizeira.com/",
+      "A simple but effective tool to help Music Directors to lead their bands.",
+    "link": "https://www.guidefy.guilhermeillescas.dev/",
     "isDisabled": false
   },
   {
