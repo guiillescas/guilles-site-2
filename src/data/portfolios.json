@@ -10,6 +10,15 @@
   },
   {
     "id": 2,
+    "imageSrc": "/assets/portfolios/guidefy.png",
+    "title": "Digital hippo",
+    "description":
+      "A digital marketplace. Buy and sell easily.",
+    "link": "https://digital-hippo.com/",
+    "isDisabled": false
+  },
+  {
+    "id": 2,
     "imageSrc": "/assets/portfolios/coffee-delivery.png",
     "title": "Coffee Delivery",
     "description":
