@@ -295,16 +295,18 @@ export default function Home() {
           <div>
             <div>
               <p>
-                As a front-end developer, I have developed multiple applications
-                that have impacted over 1 million customers worldwide. I am
-                always focused on providing an excellent user experience and
-                high performance.
+                As a senior software engineer, I have designed and developed
+                high-performance applications that have reached over{' '}
+                <strong>1 million users worldwide</strong>. My expertise lies in
+                crafting seamless user experiences, optimizing performance, and
+                building scalable solutions that drive business success.
               </p>
-
               <p>
-                I am passionate about making the world a better place through my
-                work and who I am. I enjoy helping people grow and empowering
-                them to achieve results.
+                Beyond coding, I am passionate about{' '}
+                <strong>empowering people and fostering growth—both</strong> in
+                the products I develop and in the individuals I mentor. My goal
+                is to leverage technology to create meaningful impact and
+                transform the way people interact with digital experiences.
               </p>
             </div>
 
