@@ -64,9 +64,8 @@ export default function Home() {
             </h1>
             <h2 className={primary.className}>I build stuff for the web.</h2>
             <p>
-              I'm a Senior front-end developer, proficient in building
-              exceptional web apps with high performance and excelent user
-              experience.
+              I'm a Senior Software Engineer specializing in high-performance
+              web applications with exceptional user experiences.
             </p>
 
             <div className="social-wrapper">
